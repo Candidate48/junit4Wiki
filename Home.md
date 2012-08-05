@@ -1,3 +1,3 @@
 Welcome to the junit wiki!
 
-[[ReleasingSnapshots]]
+[[Releasing-Snapshots]]
