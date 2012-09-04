@@ -177,3 +177,28 @@
 			throw new NullPointerException("What happened?");
 		}
         }
+### RuleChain ###
+
+The RuleChain rule allows ordering of TestRules:
+
+    public static class UseRuleChain {
+    	@Rule
+    	public TestRule chain= RuleChain
+    	                       .outerRule(new LoggingRule("outer rule")
+    	                       .around(new LoggingRule("middle rule")
+    	                       .around(new LoggingRule("inner rule");
+    
+    	@Test
+    	public void example() {
+    		assertTrue(true);
+    	}
+    }
+
+writes the log
+
+    starting outer rule
+    starting middle rule
+    starting inner rule
+    finished inner rule
+    finished middle rule
+    finished outer rule
