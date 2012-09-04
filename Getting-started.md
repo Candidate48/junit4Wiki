@@ -1,5 +1,7 @@
 # Creating a New Test Case
 
+## Creating a New Test Case
+
 Here is a template for writing JUnit4-style tests:
 
     package com.example.foo;
