@@ -3,13 +3,14 @@
 How do you verify that code throws exceptions as expected?
 Verifying that code completes normally is only part of programming. Making sure the code behaves as expected in exceptional situations is part of the craft of programming too. For example:
 
-`new ArrayList<Object>().get(0);`
+    new ArrayList<Object>().get(0);
 
 This code should throw an IndexOutOfBoundsException. The `@Test` annotation has an optional parameter "`expected`" that takes as values subclasses of `Throwable`. If we wanted to verify that `ArrayList` throws the correct exception, we would write:
 
-`@Test(expected= IndexOutOfBoundsException.class) public void empty() { 
-    new ArrayList<Object>().get(0); 
-}`
+    @Test(expected= IndexOutOfBoundsException.class) 
+    public void empty() { 
+         new ArrayList<Object>().get(0); 
+    }
 
 ## Deeper Testing of the Exception
 The above approach is useful for simple cases, but it has its limits. For example, you can't test the value of the message in the exception, or the state of a domain object after the exception has been thrown.  
