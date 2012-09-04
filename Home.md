@@ -12,3 +12,4 @@ Welcome to the JUnit wiki!
 * * [[Assumptions with Assume]]
 * * [[Theories]]
 * * [[One Time Fixtures]]
+* * [[Categories]]
