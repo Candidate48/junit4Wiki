@@ -10,8 +10,8 @@
 - The TemporaryFolder Rule allows creation of files and folders
   that are guaranteed to be deleted when the test method finishes
   (whether it passes or fails):
-  
-  	 public static class HasTempFolder {
+
+       public static class HasTempFolder {
 		@Rule
 		public TemporaryFolder folder= new TemporaryFolder();
 
@@ -21,14 +21,14 @@
 			File createdFolder= folder.newFolder("subfolder");
 			// ...
 		}
-	 }
+        }
 
 ## ExternalResource Rules 
 - ExternalResource is a base class for Rules (like TemporaryFolder)
   that set up an external resource before a test (a file, socket, server,
   database connection, etc.), and guarantee to tear it down afterward:
-  
-        public static class UsesExternalResource {
+
+       public static class UsesExternalResource {
   		Server myServer = new Server();
   		
 		@Rule public ExternalResource resource = new ExternalResource() {
@@ -46,7 +46,7 @@
 		@Test public void testFoo() {
 			new Client().run(myServer);
 		}
-	 }
+        }
 
 ## ErrorCollector Rule
 - The ErrorCollector Rule allows execution of a test to continue
@@ -61,27 +61,27 @@
 			collector.addError(new Throwable("first thing went wrong"));
 			collector.addError(new Throwable("second thing went wrong"));
 		}
-	}
+        }
 
 ## Verifier Rule
 - Verifier is a base class for Rules like ErrorCollector, which
   can turn otherwise passing test methods into failing tests if a verification
-  check is failed
-  
-     public static class ErrorLogVerifier() {
-       private ErrorLog errorLog = new ErrorLog();
+  check is failed.
+
+        public static class ErrorLogVerifier() {
+            private ErrorLog errorLog = new ErrorLog();
     
-       @Rule
-       public MethodRule verifier = new Verifier() {
-          @Override public void verify() {
-             assertTrue(errorLog.isEmpty());
-          }
-       }
+            @Rule
+            public MethodRule verifier = new Verifier() {
+            @Override public void verify() {
+                assertTrue(errorLog.isEmpty());
+            }
+         }
        
-       @Test public void testThatMightWriteErrorLog() {
+         @Test public void testThatMightWriteErrorLog() {
           // ...
-       }
-    }
+         }
+      }
 
 ## TestWatchman Rules
 - TestWatchman is a base class for Rules that take note
@@ -114,7 +114,7 @@
 		@Test
 		public void succeeds() {
 		}
-	}
+        }
 
 ## TestName Rule
 - The TestName Rule makes the current test name available inside test methods:
@@ -129,12 +129,12 @@
 		@Test public void testB() {
 			assertEquals("testB", name.getMethodName());
 		}
-	}
+        }
 
 ## Timeout Rule
 - The Timeout Rule applies the same timeout to all test methods in a class:
 
-       public static class HasGlobalTimeout {
+        public static class HasGlobalTimeout {
 		public static String log;
 		
 		@Rule public MethodRule globalTimeout = new Timeout(20);
@@ -148,7 +148,7 @@
 			log+= "ran2";
 			for(;;) {}
 		}
-	}
+        }
 
 ## ExpectedException Rules
 - The ExpectedException Rule allows in-test specification
@@ -176,4 +176,4 @@
 			thrown.expectMessage(startsWith("What"));
 			throw new NullPointerException("What happened?");
 		}
-	}
+        }
