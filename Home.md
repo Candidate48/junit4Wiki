@@ -10,6 +10,7 @@ Welcome to the JUnit wiki!
 * [[Timeout for Tests]]
 * [[Parameterised Tests]]
 * [[Assumptions with Assume]]
+* [[Rules]]
 * [[Theories]]
 * [[One Time Fixtures]]
 * [[Categories]]
