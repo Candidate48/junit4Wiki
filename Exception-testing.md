@@ -1,7 +1,7 @@
 # Expected Exceptions
 
 How do you verify that code throws exceptions as expected?
-Verifying that code completes normally is only part of programming. Making sure the code behaves as expected in exceptional situations is part of the craft of programming too. For example:
+Verifying that code completes normally is important, but making sure the code behaves as expected in exceptional situations is vital too. For example:
 
     new ArrayList<Object>().get(0);
 
