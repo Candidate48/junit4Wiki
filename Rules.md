@@ -23,6 +23,9 @@
 		}
         }
 
+- `TemporaryFolder#newFolder(String... folderNames)` creates recursively deep temporary folders 
+- `TemporaryFolder#newFile()` creates a randomly named new file, and `#newFolder()` creates a randomly named new folder
+
 ## ExternalResource Rules 
 - ExternalResource is a base class for Rules (like TemporaryFolder)
   that set up an external resource before a test (a file, socket, server,
