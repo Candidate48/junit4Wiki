@@ -209,7 +209,7 @@
 			}
 		}
 		
-### ClassRule ###
+## ClassRule ##
 
 The `ClassRule` annotation extends the idea of method-level Rules,
 adding static fields that can affect the operation of a whole class.  Any
@@ -239,7 +239,7 @@ all the test classes run, and disconnects after they are finished:
 		}
 	
 
-### RuleChain ###
+## RuleChain ##
 
 The RuleChain rule allows ordering of TestRules:
 
