@@ -13,3 +13,4 @@ Welcome to the JUnit wiki!
 * * [[Theories]]
 * * [[One Time Fixtures]]
 * * [[Categories]]
+* * [[Use with Maven]]
