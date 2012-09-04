@@ -1,6 +1,6 @@
 # Getting Started
 
-*Note:* This is very much a work in progress.
+**Note:** This is very much a work in progress.
 
 ## Creating a New Test Case
 
