@@ -24,6 +24,8 @@ When a class is annotated with `@RunWith` or extends a class annotated with `@Ru
 - JavaDoc for @RunWith http://junit.sourceforge.net/javadoc/org/junit/runner/RunWith.html
 - The default runner is `BlockJUnit4ClassRunner` which supersedes the older `JUnit4ClassRunner`
 - Annotating a class with `@RunWith(JUnit4.class)` will always invoke the default JUnit 4 runner in the current version of JUnit, this class aliases the current default JUnit 4 class runner.
+
+### Specialized Runners
 - `Suite` is a standard runner that allows you to manually build a suite containing tests from many classes. http://junit.sourceforge.net/javadoc/org/junit/runners/Suite.html
 - `Parameterized` is a standard runner that implements parameterized tests. When running a parameterized test class, instances are created for the cross-product of the test methods and the test data elements http://junit.sourceforge.net/javadoc/org/junit/runners/Parameterized.html
 - `Categories` is a standard runner enabling subsets of tests tagged with certain categories to execute/be excluded froma  given test run.
