@@ -10,7 +10,7 @@ Welcome to the JUnit wiki!
 * [[Matchers and assertThat]]
 * [[Ignoring Tests]]
 * [[Timeout for Tests]]
-* [[Parameterised Tests]]
+* [[Parameterized Tests]]
 * [[Assumptions with Assume]]
 * [[Rules]]
 * [[Theories]]
