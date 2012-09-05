@@ -42,5 +42,5 @@ The following one-liner described at http://stackoverflow.com/questions/5094410/
 
 reports on the test times, slowest sorted to the top:
 
-`grep -h "<testcase" `find . -iname "TEST-*.xml"` | sed 's/<testcase time="\(.*\)" classname="\(.*\)" name="\(.*\)".*/\1\t\2.\3/' | sort -rn | head`
+        grep -h "<testcase" `find . -iname "TEST-*.xml"` | sed 's/<testcase time="\(.*\)" classname="\(.*\)" name="\(.*\)".*/\1\t\2.\3/' | sort -rn | head
 
