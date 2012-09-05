@@ -4,6 +4,7 @@ Welcome to the JUnit wiki!
 * [[Maintainer Documentation]]
 
 ##  JUnit Usage and Idioms
+* [[Assertions]]
 * [[Test Runners]]
 * [[Aggregating tests in Suites]]
 * [[Exception Testing]]
