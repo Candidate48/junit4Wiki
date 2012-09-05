@@ -4,6 +4,7 @@ Welcome to the JUnit wiki!
 * [[Maintainer Documentation]]
 
 ##  JUnit Usage and Idioms
+* [[Test Runners]]
 * [[Exception Testing]]
 * [[Matchers and assertThat]]
 * [[Ignoring Tests]]
