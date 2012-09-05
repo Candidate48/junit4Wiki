@@ -19,3 +19,4 @@ Welcome to the JUnit wiki!
 * [[Use with Maven]]
 * [[multithreaded code and concurrency]]
 * [[Java contract test helpers]]
+* [[Continuous Testing]]
