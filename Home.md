@@ -12,7 +12,7 @@ Welcome to the JUnit wiki!
 * [[Assumptions with Assume]]
 * [[Rules]]
 * [[Theories]]
-* [[One Time Fixtures]]
+* [[Test Fixtures]]
 * [[Categories]]
 * [[Use with Maven]]
 * [[multithreaded code and concurrency]]
