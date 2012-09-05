@@ -2,6 +2,7 @@ Tests that 'runaway' or take too long, can be automatically failed.  There are t
 
 ### Timeout parameter on @Test Annotation (applies to test method)
 You can optionally specify timeout in milliseconds to cause a test method to fail if it takes longer than that number of milliseconds.  If the time limit is exceeded, the the failure is triggered by a `TimeoutException` being thrown:
+
 				@Test(timeout=1000)
 				public void testWithTimeout() {
 				  ...
