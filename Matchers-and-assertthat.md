@@ -58,3 +58,11 @@ To use many, many more, consider downloading the full hamcrest package:
 * Hamcrest Java on GitHub: https://github.com/hamcrest/JavaHamcrest
 
 JUnit contains special support for comparing string and array values, giving specific information on how they differ. This is not yet available using the assertThat syntax, but we hope to bring the two assert methods into closer alignment in future releases.
+
+# JUnit Matchers
+JUnit includes useful matchers for use with the assertThat method, but they are not currently included in the basic CoreMatchers class from hamcrest.
+- Javadoc JUnitMatchers http://junit.sourceforge.net/javadoc/org/junit/matchers/JUnitMatchers.html
+
+# Hamcrest CoreMatchers
+Useful Hamcrest CoreMatchers are included in the JUnit distribution
+- JavaDoc Hamcrest CoreMatchers http://kentbeck.github.com/junit/javadoc/4.10/org/hamcrest/CoreMatchers.html
