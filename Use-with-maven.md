@@ -36,3 +36,11 @@ In your POM.xml, declare dependency used as JUnit-dep, and also override transit
         <version>1.9.0</version>
         <scope>test</scope>
     </dependency>
+
+## Discover slowest test from Surefire xml output:
+The following one-liner described at http://stackoverflow.com/questions/5094410/how-to-list-the-slowest-junit-tests-in-a-multi-module-maven-build
+
+reports on the test times, slowest sorted to the top:
+
+`grep -h "<testcase" `find . -iname "TEST-*.xml"` | sed 's/<testcase time="\(.*\)" classname="\(.*\)" name="\(.*\)".*/\1\t\2.\3/' | sort -rn | head`
+
