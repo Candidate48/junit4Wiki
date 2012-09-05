@@ -1,7 +1,9 @@
 Java code can be difficult to test for thread safety when multithreading.
 
 The article at http://www.planetgeek.ch/2009/08/25/how-to-find-a-concurrency-bug-with-java/
-describes a method of exposing concurrency bugs that adds a new assertion method `assertConcurrent`, that you pass in a Collection of Runnables that are your arrange\act\assert test on the SUT, the chances of triggering a multithreading code error and failing some assertion are greatly increased:
+describes a method of exposing concurrency bugs that adds a new assertion method `assertConcurrent`.  
+
+To use this you pass in a Collection of Runnables that are your arrange\act\assert test on the SUT, they all run at the same time in the `assertConcurrent` method; the chances of triggering a multithreading code error, and thereby failing some assertion are greatly increased:
 
 The assertConcurrent method is:
 
