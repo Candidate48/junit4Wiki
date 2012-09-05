@@ -5,6 +5,7 @@ Welcome to the JUnit wiki!
 
 ##  JUnit Usage and Idioms
 * [[Test Runners]]
+* [[Aggregating tests in Suites]]
 * [[Exception Testing]]
 * [[Matchers and assertThat]]
 * [[Ignoring Tests]]
