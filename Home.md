@@ -16,3 +16,4 @@ Welcome to the JUnit wiki!
 * [[Categories]]
 * [[Use with Maven]]
 * [[multithreaded code and concurrency]]
+* [[Java contract test helpers]]
