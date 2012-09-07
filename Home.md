@@ -2,6 +2,7 @@ Welcome to the JUnit wiki!
 
 * [[Getting Started]]
 * [[Maintainer Documentation]]
+* Latest JUnit Questions on StackOverflow: http://stackoverflow.com/questions/tagged/junit
 
 ##  JUnit Usage and Idioms
 * [[Assertions]]
