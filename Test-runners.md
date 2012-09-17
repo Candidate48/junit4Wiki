@@ -33,6 +33,7 @@ When a class is annotated with `@RunWith` or extends a class annotated with `@Ru
 ### Experimental Runners
 - `Enclosed` - If you put tests in inner classes, Ant, for example, won't find them. By running the outer class with Enclosed, the tests in the inner classes will be run. You might put tests in inner classes to group them for convenience or to share constants.
 - Javadoc http://kentbeck.github.com/junit/javadoc/4.10/org/junit/experimental/runners/Enclosed.html
+- Working Example of use on the [[Enclosed Test Runner Example]] page
 
 ### Third Party Runners
 Some popular third party implementations of runners for use with `@RunWith` include:
