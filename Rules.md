@@ -6,6 +6,43 @@
  
  - For more on this feature, see http://www.threeriversinstitute.org/blog/?p=155
 
+### Example ###
+For an example of a rule uasage, there follows a test using the TemporaryFolder and ExpectedException rules:
+		public class DigitalAssetManagerTest {
+
+			@Rule
+			public TemporaryFolder tempFolder = new TemporaryFolder();
+
+			@Rule
+			public ExpectedException exception = ExpectedException.none();
+
+			@Test
+			public void countsAssets() throws IOException {
+				File icon = tempFolder.newFile("icon.png");
+				File assets = tempFolder.newFolder("assets");
+				createAssets(assets, 3);
+
+				DigitalAssetManager dam = new DigitalAssetManager(icon, assets);
+				assertEquals(3, dam.getAssetCount());
+			}
+
+			private void createAssets(File assets, int numberOfAssets) throws IOException {
+				for (int index = 0; index < numberOfAssets; index++) {
+					File asset = new File(assets, String.format("asset-%d.mpg", index));
+					Assert.assertTrue("Asset couldn't be created.", asset.createNewFile());
+				}
+			}
+
+			@Test
+			public void throwsIllegalArgumentExceptionIfIconIsNull() {
+				exception.expect(IllegalArgumentException.class);
+				exception.expectMessage("Icon is null, not a file, or doesn't exist.");
+				new DigitalAssetManager(null, null);
+			}
+		}
+
+
+# Base Rules Provided in The Distribution #
 ## TemporaryFolder Rule 
 - The TemporaryFolder Rule allows creation of files and folders that are guaranteed to be deleted when the test method finishes (whether it passes or fails):
 
