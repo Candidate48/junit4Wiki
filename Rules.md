@@ -131,11 +131,10 @@ For an example of a rule usage, there follows a test using the TemporaryFolder a
 			assertEquals("test verify ", sequence);
 		}
 
-## TestWatchman Rules
-- TestWatchman is a base class for Rules that take note
-  of the testing action, without modifying it.
-  For example, this class will keep a log of each passing and failing 
-  test:
+## TestWatchman/TestWatcher Rules
+- TestWatchman was introduced in JUnit 4.7, it uses a MethodRule, which is now deprecated. 
+- TestWatcher replaces TestWatchman from version 4.9.  It implements TestRule, not MethodRulwe
+- TestWatcher (and deprecated TestWatchman) are base classes for Rules that take note of the testing action, without modifying it.  For example, this class will keep a log of each passing and failing test:
      
 		 import static org.junit.Assert.fail;  
 		 import org.junit.Rule;
