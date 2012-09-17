@@ -132,9 +132,11 @@ For an example of a rule usage, there follows a test using the TemporaryFolder a
 		}
 
 ## TestWatchman/TestWatcher Rules
+- TestWatcher replaces TestWatchman from version 4.9.  It implements TestRule, not MethodRule
+-- http://kentbeck.github.com/junit/javadoc/4.10/org/junit/rules/TestWatcher.html
 - TestWatchman was introduced in JUnit 4.7, it uses a MethodRule, which is now deprecated. 
-- TestWatcher replaces TestWatchman from version 4.9.  It implements TestRule, not MethodRulwe
-- TestWatcher (and deprecated TestWatchman) are base classes for Rules that take note of the testing action, without modifying it.  For example, this class will keep a log of each passing and failing test:
+-- http://kentbeck.github.com/junit/javadoc/4.10/org/junit/rules/TestWatchman.html
+- TestWatcher (and the deprecated TestWatchman) are base classes for Rules that take note of the testing action, without modifying it.  For example, this class will keep a log of each passing and failing test:
      
 		 import static org.junit.Assert.fail;  
 		 import org.junit.Rule;
