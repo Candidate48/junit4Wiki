@@ -1,4 +1,3 @@
-
 # Enclosed TestRunner usage #
 Example of using ``Enclosed`` TestRunner.
 
@@ -45,6 +44,24 @@ Here's the domain class to test.
 
 			public String getZip() {
 				return zip;
+			}
+
+			@Override
+			public int compareTo(Address that) {
+				return ComparisonChain.start().compare(this.zip, that.zip).compare(this.state, that.state)
+						.compare(this.city, that.city).compare(this.address1, that.address1).result();
+			}
+
+			@Override
+			public boolean equals(Object obj) {
+				if (obj == null) { return false; }
+				if (getClass() != obj.getClass()) { return false; }
+				final Address that = (Address) obj;
+
+				return com.google.common.base.Objects.equal(this.address1, that.address1)
+						&& com.google.common.base.Objects.equal(this.city, that.city)
+						&& com.google.common.base.Objects.equal(this.state, that.state)
+						&& com.google.common.base.Objects.equal(this.zip, that.zip);
 			}
 
 			@Override
