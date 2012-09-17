@@ -1,7 +1,7 @@
 # Maven Dependency
      <dependency>
 	    <groupId>junit</groupId>
-	    <artifactId>junit-dep</artifactId>
+	    <artifactId>junit</artifactId>
 	    <version>4.10</version>
         <scope>test</scope>
      </dependency> 
