@@ -29,9 +29,11 @@ When a class is annotated with `@RunWith` or extends a class annotated with `@Ru
 - `Suite` is a standard runner that allows you to manually build a suite containing tests from many classes.
  - More information at [[Aggregating tests in Suites]] page.
  - http://junit.sourceforge.net/javadoc/org/junit/runners/Suite.html
+
 - `Parameterized` is a standard runner that implements parameterized tests. When running a parameterized test class, instances are created for the cross-product of the test methods and the test data elements.
  - More information at [[Parameterized Tests]] page.
  - Javadoc: http://junit.sourceforge.net/javadoc/org/junit/runners/Parameterized.html
+
 - `Categories` is a standard runner enabling subsets of tests tagged with certain categories to execute/be excluded from a  given test run.
  - More information at [[Categories]] page.
 
