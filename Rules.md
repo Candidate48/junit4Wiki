@@ -8,6 +8,7 @@
 
 ### Example ###
 For an example of a rule uasage, there follows a test using the TemporaryFolder and ExpectedException rules:
+
 		public class DigitalAssetManagerTest {
 
 			@Rule
