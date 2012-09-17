@@ -26,13 +26,16 @@ When a class is annotated with `@RunWith` or extends a class annotated with `@Ru
 - Annotating a class with `@RunWith(JUnit4.class)` will always invoke the default JUnit 4 runner in the current version of JUnit, this class aliases the current default JUnit 4 class runner.
 
 ### Specialized Runners
-- `Suite` is a standard runner that allows you to manually build a suite containing tests from many classes. http://junit.sourceforge.net/javadoc/org/junit/runners/Suite.html
-- `Parameterized` is a standard runner that implements parameterized tests. When running a parameterized test class, instances are created for the cross-product of the test methods and the test data elements http://junit.sourceforge.net/javadoc/org/junit/runners/Parameterized.html
+- `Suite` is a standard runner that allows you to manually build a suite containing tests from many classes.
+ - http://junit.sourceforge.net/javadoc/org/junit/runners/Suite.html
+- `Parameterized` is a standard runner that implements parameterized tests. When running a parameterized test class, instances are created for the cross-product of the test methods and the test data elements
+ - http://junit.sourceforge.net/javadoc/org/junit/runners/Parameterized.html
 - `Categories` is a standard runner enabling subsets of tests tagged with certain categories to execute/be excluded froma  given test run.
 
 ### Experimental Runners
 - `Enclosed` - If you put tests in inner classes, Ant, for example, won't find them. By running the outer class with Enclosed, the tests in the inner classes will be run. You might put tests in inner classes to group them for convenience or to share constants.
-- Javadoc http://kentbeck.github.com/junit/javadoc/4.10/org/junit/experimental/runners/Enclosed.html
+- Javadoc: 
+ - http://kentbeck.github.com/junit/javadoc/4.10/org/junit/experimental/runners/Enclosed.html
 - Working Example of use on the [[Enclosed Test Runner Example]] page
 
 ### Third Party Runners
