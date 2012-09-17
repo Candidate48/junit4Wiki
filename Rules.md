@@ -7,7 +7,7 @@
  - For more on this feature, see http://www.threeriversinstitute.org/blog/?p=155
 
 ### Example ###
-For an example of a rule uasage, there follows a test using the TemporaryFolder and ExpectedException rules:
+For an example of a rule usage, there follows a test using the TemporaryFolder and ExpectedException rules:
 
 		public class DigitalAssetManagerTest {
 
