@@ -30,6 +30,10 @@ When a class is annotated with `@RunWith` or extends a class annotated with `@Ru
 - `Parameterized` is a standard runner that implements parameterized tests. When running a parameterized test class, instances are created for the cross-product of the test methods and the test data elements http://junit.sourceforge.net/javadoc/org/junit/runners/Parameterized.html
 - `Categories` is a standard runner enabling subsets of tests tagged with certain categories to execute/be excluded froma  given test run.
 
+### Experimental Runners
+- `Enclosed` - If you put tests in inner classes, Ant, for example, won't find them. By running the outer class with Enclosed, the tests in the inner classes will be run. You might put tests in inner classes to group them for convenience or to share constants.
+- Javadoc http://kentbeck.github.com/junit/javadoc/4.10/org/junit/experimental/runners/Enclosed.html
+
 Some popular third party implementations of runners for use with `@RunWith` include:
 - SpringJUnit4ClassRunner http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.html
 - MockitoJUnitRunner http://docs.mockito.googlecode.com/hg/latest/org/mockito/runners/MockitoJUnitRunner.html
