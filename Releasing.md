@@ -24,6 +24,8 @@ ant -lib build/lib -Dversion-status=-beta-1 stage.maven
 ```
 Replace `-beta-1` as appropriate.
 
+Release it: https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide#SonatypeOSSMavenRepositoryUsageGuide-8a.ReleaseIt
+
 ### Building JARs and ZIP for upload to GitHub
 
 ```sh
