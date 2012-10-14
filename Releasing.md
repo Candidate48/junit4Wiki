@@ -6,7 +6,7 @@
 ant -lib build/lib snapshot.maven
 ```
 
-### Building JARs and ZIPs for upload to GitHub
+### Building JARs and ZIP for upload to GitHub
 
 ```sh
 ant -lib build/lib -Dversion-status=-SNAPSHOT-20120805-1225 zip
@@ -23,3 +23,9 @@ Replace `20120805-1225` with the current date and time.
 ant -lib build/lib -Dversion-status=-beta-1 stage.maven
 ```
 Replace `-beta-1` as appropriate.
+
+### Building JARs and ZIP for upload to GitHub
+
+```sh
+ant -lib build/lib -Dversion-status=-beta-1 zip
+```
