@@ -1,4 +1,4 @@
-k
+
 # Plain-old JAR
 
 Download one of the following JARs from our [GitHub downloads page](https://github.com/KentBeck/junit/downloads):
