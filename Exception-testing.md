@@ -45,4 +45,8 @@ The expectMessage also lets you use Matchers, which gives you a bit more flexibi
 
 `thrown.expectMessage(JUnitMatchers.containsString("Size: 0"));`
 
- 
+`ExceptionRule` also provides the capability to customize the failure message thrown if the test does not throw the expected exception. An example:
+
+`thrown.reportMissingExceptionWithMessage("FAIL: Expected exception to be thrown");`
+
+If a custom failure message is not provided a default one is used.
