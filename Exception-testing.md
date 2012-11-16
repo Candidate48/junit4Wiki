@@ -38,9 +38,11 @@ Alternatively, use the `ExpectedException` rule. This rule lets you indicate not
 
     @Test
     public void shouldTestExceptionMessage() throws IndexOutOfBoundsException {
+        List<Object> list = new ArrayList<Object>();
+
         thrown.expect(IndexOutOfBoundsException.class);
         thrown.expectMessage("Index: 0, Size: 0");
-        new ArrayList<Object>().get(0);
+        list.get(0); // execution will never get past this line
     }
  
 The expectMessage also lets you use Matchers, which gives you a bit more flexibility in your tests. An example:
