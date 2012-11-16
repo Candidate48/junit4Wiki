@@ -12,6 +12,8 @@ This code should throw an IndexOutOfBoundsException. The `@Test` annotation has 
          new ArrayList<Object>().get(0); 
     }
 
+The `expected` parameter should be used with care. The above test will pass if *any* code in the method throws `IndexOutOfBoundsException`. For longer tests, it's recommended to use the `ExpectedException` rule, which is described below.
+
 ## Deeper Testing of the Exception
 The above approach is useful for simple cases, but it has its limits. For example, you can't test the value of the message in the exception, or the state of a domain object after the exception has been thrown.  
 
