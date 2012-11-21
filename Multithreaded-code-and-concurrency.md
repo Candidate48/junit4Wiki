@@ -45,3 +45,16 @@ The assertConcurrent method is:
 
 
 
+
+### Java Concurrency Bookshelf
+
+The Java Memory Model and Thread Specification [JSR-133](http://jcp.org/en/jsr/detail?id=133)
+
+The book **Java Concurrency in Practice** by Brian Goetz.
+
+The publications by Doug Lea
+
+http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html
+
+http://g.oswego.edu
+
