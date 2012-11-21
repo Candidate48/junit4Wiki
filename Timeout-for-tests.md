@@ -18,8 +18,7 @@ public class HasGlobalTimeout {
     public static String log;
 
     @Rule
-    public Timeout globalTimeout = new Timeout(10000); // 10 seconds max per method
-                                                    // tested
+    public Timeout globalTimeout = new Timeout(10000); // 10 seconds max per method tested
 
     @Test
     public void testInfiniteLoop1() {
