@@ -66,7 +66,7 @@ An example of usage:
 
 		@After
 		public void tearDown() throws IOException {
-			this.println("@After setUp");
+			this.println("@After tearDown");
 			this.myManagedResource.close();
 			this.myManagedResource = null;
 		}
@@ -87,9 +87,8 @@ Will Output something like the following:
 	@BeforeClass setUpClass
 	@Before setUp
 	@Test test2()
-	@After setUp
+	@After tearDown
 	@Before setUp
 	@Test test1()
-	@After setUp
+	@After tearDown
 	@AfterClass tearDownClass
-
