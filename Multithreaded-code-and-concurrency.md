@@ -50,7 +50,7 @@ The assertConcurrent method is:
 
 The Java Memory Model and Thread Specification [JSR-133](http://jcp.org/en/jsr/detail?id=133)
 
-Threads and Locks [Java Virtual Machine Specification](http://docs.oracle.com/javase/specs/jvms/se5.0/html/Threads.doc.html)
+Threads and Locks, [Java Virtual Machine Specification](http://docs.oracle.com/javase/specs/jvms/se5.0/html/Threads.doc.html)
 
 The book **Java Concurrency in Practice** by Brian Goetz.
 
