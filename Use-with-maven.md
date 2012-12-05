@@ -10,6 +10,11 @@
 See Maven Surefire plugin http://maven.apache.org/plugins/maven-surefire-plugin/
 
 ## Use JUnit and Hamcrest in Maven
+### version 4.11 and later
+Up until now there were two Maven artifacts for JUnit: junit:junit-dep and junit:junit. From a Maven point-of-view only the former made sense because it did not contain the Hamcrest classes but declared a dependency to the Hamcrest Maven artifact. The latter included the Hamcrest classes which was very un-Maven-like.
+
+From this release (4.11) on, you should use junit:junit which will be what junit:junit-dep used to. If you still reference junit:junit-dep, Maven will automatically relocate you to the new junit:junit and issue a warning for you to fix.
+### version 4.10 and earlier
 In your POM.xml, declare dependency used as JUnit-dep, and also override transitive dependency to Hamcrest-Core, so you can use Hamcrest full library of matchers:
 
     <dependency>
