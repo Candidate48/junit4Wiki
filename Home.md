@@ -15,6 +15,7 @@ Welcome to the JUnit wiki!
 * [[Assertions]]
 * [[Test Runners]]
 * [[Aggregating tests in Suites]]
+* [[Test Execution Order]]
 * [[Exception Testing]]
 * [[Matchers and assertThat]]
 * [[Ignoring Tests]]
