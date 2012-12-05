@@ -32,3 +32,35 @@ For example, to test a Fibonacci function, write:
 	 }
 	 
 Each instance of FibonacciTest will be constructed using the two-argument constructor and the data values in the @Parameters method.
+
+## Identify Individual test cases
+In order to easily identify the individual test cases in a Parameterized test, you may provide a name using the @Parameters annotation. This name is allowed to contain placeholders that are replaced at runtime:
+
+- `{index}`: the current parameter index
+- `{0}, {1}, …`: the first, second, and so on, parameter value
+
+## Example
+		@RunWith(Parameterized.class)
+		public class FibonacciTest {
+
+			@Parameters(name = "{index}: fib({0})={1}")
+			public static Iterable<Object[]> data() {
+				return Arrays.asList(new Object[][] { { 0, 0 }, { 1, 1 }, { 2, 1 },
+						{ 3, 2 }, { 4, 3 }, { 5, 5 }, { 6, 8 } });
+			}
+
+			private int input;
+			private int expected;
+
+			public FibonacciTest(int input, int expected) {
+				this.input = input;
+				this.expected = expected;
+			}
+
+			@Test
+			public void test() {
+				assertEquals(expected, Fibonacci.compute(input));
+			}
+		}
+
+In the example given above, the Parameterized runner creates names like [1: fib(3)=2]. If you don't specify a name, the current parameter index will be used by default.
