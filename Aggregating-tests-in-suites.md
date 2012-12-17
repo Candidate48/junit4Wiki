@@ -3,19 +3,20 @@ Using `Suite` as a runner allows you to manually build a suite containing tests 
 ## Example
 The  class below is a  placeholder for the suite annotations, no other implementation is required. Note the `@RunWith` annotation, which specifies that the JUnit 4 test runner to use is `org.junit.runners.Suite` for running this particular test class. This works in conjunction with the @Suite annotation, which tells the Suite runner which test classes to include in this suite and in which order.
 
-	import org.junit.runner.RunWith;
-	import org.junit.runners.Suite;
-	 
-	@RunWith(Suite.class)
-	@Suite.SuiteClasses({
-	  TestFeatureLogin.class,
-	  TestFeatureLogout.class,
-	  TestFeatureNavigate.class,
-	  TestFeatureUpdate.class
-	})
-	 
-	public class FeatureTestSuite {
-		// the class remains empty, 
-		// used only as a holder for the above annotations
-	}
+```java
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+  TestFeatureLogin.class,
+  TestFeatureLogout.class,
+  TestFeatureNavigate.class,
+  TestFeatureUpdate.class
+})
+
+public class FeatureTestSuite {
+  // the class remains empty,
+  // used only as a holder for the above annotations
+}
+```
