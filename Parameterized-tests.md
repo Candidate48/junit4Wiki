@@ -64,3 +64,6 @@ In order to easily identify the individual test cases in a Parameterized test, y
 		}
 
 In the example given above, the Parameterized runner creates names like [1: fib(3)=2]. If you don't specify a name, the current parameter index will be used by default.
+
+## IDE Bug (Eclipse)
+If using the `(name=` annotation parm and one of the inputs has a rounded bracket, then the name gets truncated.  See https://bugs.eclipse.org/bugs/show_bug.cgi?id=102512
