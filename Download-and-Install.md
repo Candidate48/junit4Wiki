@@ -15,3 +15,10 @@ In addition there is a complete ZIP file that includes all of the above JARs alo
 # Maven
 
 Add a dependency to `junit:junit` in `test` scope.
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+      <scope>test</scope>
+    </dependency>
