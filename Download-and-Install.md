@@ -11,7 +11,7 @@ To use one of those JARs simply put them on your test classpath.
 
 # Maven
 
-Add a dependency to `junit:junit` in `test` scope.
+Add a dependency to `junit:junit` in `test` scope.  (Note: 4.11 was the latest version as of the latest edit on this page.  It may now be stale.)
 
     <dependency>
       <groupId>junit</groupId>
