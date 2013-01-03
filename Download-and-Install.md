@@ -16,6 +16,6 @@ Add a dependency to `junit:junit` in `test` scope.
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.10</version>
+      <version>4.11</version>
       <scope>test</scope>
     </dependency>
