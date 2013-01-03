@@ -2,15 +2,12 @@ To download and install JUnit you currently have the following options.
  
 # Plain-old JAR
 
-Download one of the following JARs from our [GitHub downloads page](https://github.com/KentBeck/junit/downloads):
+Download one of the following JARs:
 
-* `junit.jar`: Includes the Hamcrest classes. The simple all-in-one solution to get started quickly.
-* `junit-dep.jar`: Only includes the JUnit classes but not Hamcrest. Let's you use a different Hamcrest version.
-* `junit-src.jar`: The sources for JUnit.
+* [`junit.jar`](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22junit%22%20AND%20a%3A%22junit%22): Includes the Hamcrest classes. The simple all-in-one solution to get started quickly.
+* [`junit-dep.jar`](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22junit%22%20AND%20a%3A%22junit-dep%22): Only includes the JUnit classes but not Hamcrest. Let's you use a different Hamcrest version.
 
 To use one of those JARs simply put them on your test classpath.
-
-In addition there is a complete ZIP file that includes all of the above JARs along with Javadoc for JUnit and Hamcrest.
 
 # Maven
 
