@@ -9,86 +9,87 @@ JUnit provides annotations so that test classes can have fixture run before or a
 There are four fixture annotations: two for class-level fixtures and two for method-level ones. At the
 class level, you have `@BeforeClass` and `@AfterClass`, and at the method (or test) level, you have `@Before` and `@After`.
 
-A deeper explanation of fixtures, and how they could also be implemented using `Rules` is discussed here: https://garygregory.wordpress.com/2011/09/25/understaning-junit-method-order-execution/
+A deeper explanation of fixtures, and how they could also be implemented using `Rules` is discussed [here]( https://garygregory.wordpress.com/2011/09/25/understaning-junit-method-order-execution/).
 
 An example of usage:
 
-	
-	package test;
+```java
+package test;
 
+import java.io.Closeable;
+import java.io.IOException;
 
-	import java.io.Closeable;
-	import java.io.IOException;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
-	import org.junit.After;
-	import org.junit.AfterClass;
-	import org.junit.Before;
-	import org.junit.BeforeClass;
-	import org.junit.Test;
+public class TestFixturesExample {
+  static class ExpensiveManagedResource implements Closeable {
+    @Override
+    public void close() throws IOException {}
+  }
 
-	public class TestFixturesExample {
+  static class ManagedResource implements Closeable {
+    @Override
+    public void close() throws IOException {}
+  }
 
-		static class ExpensiveManagedResource implements Closeable {
-			@Override
-			public void close() throws IOException {}
-		}
+  @BeforeClass
+  public static void setUpClass() {
+    System.out.println("@BeforeClass setUpClass");
+    MyExpensiveManagedResource = new ExpensiveManagedResource();
+  }
 
-		static class ManagedResource implements Closeable {
-			@Override
-			public void close() throws IOException {}
-		}
+  @AfterClass
+  public static void tearDownClass() throws IOException {
+    System.out.println("@AfterClass tearDownClass");
+    MyExpensiveManagedResource.close();
+    MyExpensiveManagedResource = null;
+  }
 
-		@BeforeClass
-		public static void setUpClass() {
-			System.out.println("@BeforeClass setUpClass");
-			MyExpensiveManagedResource = new ExpensiveManagedResource();
-		}
+  private ManagedResource myManagedResource;
+  private static ExpensiveManagedResource MyExpensiveManagedResource;
 
-		@AfterClass
-		public static void tearDownClass() throws IOException {
-			System.out.println("@AfterClass tearDownClass");
-			MyExpensiveManagedResource.close();
-			MyExpensiveManagedResource = null;
-		}
+  private void println(String string) {
+    System.out.println(string);
+  }
 
-		private ManagedResource myManagedResource;
-		private static ExpensiveManagedResource MyExpensiveManagedResource;
+  @Before
+  public void setUp() {
+    this.println("@Before setUp");
+    this.myManagedResource = new ManagedResource();
+  }
 
-		private void println(String string) {
-			System.out.println(string);
-		}
+  @After
+  public void tearDown() throws IOException {
+    this.println("@After tearDown");
+    this.myManagedResource.close();
+    this.myManagedResource = null;
+  }
 
-		@Before
-		public void setUp() {
-			this.println("@Before setUp");
-			this.myManagedResource = new ManagedResource();
-		}
+  @Test
+  public void test1() {
+    this.println("@Test test1()");
+  }
 
-		@After
-		public void tearDown() throws IOException {
-			this.println("@After tearDown");
-			this.myManagedResource.close();
-			this.myManagedResource = null;
-		}
-
-		@Test
-		public void test1() {
-			this.println("@Test test1()");
-		}
-
-		@Test
-		public void test2() {
-			this.println("@Test test2()");
-		}
-	}
+  @Test
+  public void test2() {
+    this.println("@Test test2()");
+  }
+}
+```
 
 Will Output something like the following:
 
-	@BeforeClass setUpClass
-	@Before setUp
-	@Test test2()
-	@After tearDown
-	@Before setUp
-	@Test test1()
-	@After tearDown
-	@AfterClass tearDownClass
+```java
+@BeforeClass setUpClass
+@Before setUp
+@Test test2()
+@After tearDown
+@Before setUp
+@Test test1()
+@After tearDown
+@AfterClass tearDownClass
+```
