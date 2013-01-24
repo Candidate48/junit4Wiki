@@ -5,7 +5,7 @@ describes a method of exposing concurrency bugs that adds a new assertion method
 
 To use this you pass in a Collection of Runnables that are your arrange\act\assert test on the SUT, they all run at the same time in the `assertConcurrent` method; the chances of triggering a multithreading code error, and thereby failing some assertion are greatly increased:
 
-The assertConcurrent method is:
+The `assertConcurrent` method from the article is:
 
 		public static void assertConcurrent(final String message, final List<? extends Runnable> runnables, final int maxTimeoutSeconds) throws InterruptedException {
 		  final int numThreads = runnables.size();
@@ -43,8 +43,7 @@ The assertConcurrent method is:
 
 
 
-
-
+Another article giving an overview of alternative stragies at [http://tempusfugitlibrary.org/recipes/2012/05/20/testing-concurrent-code/](http://tempusfugitlibrary.org/recipes/2012/05/20/testing-concurrent-code/) might also be useful.
 
 ### Java Concurrency Bookshelf
 
@@ -59,4 +58,3 @@ The publications by Doug Lea
 http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html
 
 http://g.oswego.edu
-
