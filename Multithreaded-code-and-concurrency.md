@@ -47,14 +47,8 @@ Another article giving an overview of alternative stragies at [http://tempusfugi
 
 ### Java Concurrency Bookshelf
 
-The Java Memory Model and Thread Specification [JSR-133](http://jcp.org/en/jsr/detail?id=133)
-
-Threads and Locks, [Java Virtual Machine Specification](http://docs.oracle.com/javase/specs/jvms/se5.0/html/Threads.doc.html)
-
-The book **Java Concurrency in Practice** by Brian Goetz.
-
-The publications by Doug Lea
-
-http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html
-
-http://g.oswego.edu
+- The Java Memory Model and Thread Specification [JSR-133](http://jcp.org/en/jsr/detail?id=133)
+- Threads and Locks, [Java Virtual Machine Specification](http://docs.oracle.com/javase/specs/jvms/se5.0/html/Threads.doc.html)
+- The book [Java Concurrency in Practice](http://www.javaconcurrencyinpractice.com) by Brian Goetz ([Amazon UK](http://tinyurl.com/a98yue3)).
+- [Double Checked Locking article](http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html) by Doug Lea
+- [Doug Lea's homepage](http://g.oswego.edu)
