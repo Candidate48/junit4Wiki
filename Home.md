@@ -27,6 +27,6 @@ Welcome to the JUnit wiki!
 * [[Test Fixtures]]
 * [[Categories]]
 * [[Use with Maven]]
-* [[multithreaded code and concurrency]]
+* [[Multithreaded code and Concurrency]]
 * [[Java contract test helpers]]
 * [[Continuous Testing]]
