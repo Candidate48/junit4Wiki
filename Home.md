@@ -30,3 +30,7 @@ Welcome to the JUnit wiki!
 * [[Multithreaded code and Concurrency]]
 * [[Java contract test helpers]]
 * [[Continuous Testing]]
+
+##  Third-party extensions
+
+* [[Custom Runners]]
