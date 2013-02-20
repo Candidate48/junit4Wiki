@@ -1,5 +1,3 @@
-Theories
-
 More flexible and expressive assertions, combined with the ability to state assumptions clearly, lead to a new kind of statement of intent, which we call a "Theory". A test captures the intended behavior in one particular scenario. A theory captures some aspect of the intended behavior in possibly infinite numbers of potential scenarios. For example:
 ```java
 @RunWith(Theories.class)
