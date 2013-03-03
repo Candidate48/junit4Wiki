@@ -32,6 +32,7 @@ To address this you can use the try/catch idiom which prevailed in JUnit 3.x:
 ```
 ### ExpectedException Rule
 Alternatively, use the `ExpectedException` rule. This rule lets you indicate not only what exception you are expecting, but also the exception message you are expecting:
+
 ```java    
     @Rule
     public ExpectedException thrown = ExpectedException.none();
