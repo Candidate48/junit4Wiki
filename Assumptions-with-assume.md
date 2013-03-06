@@ -17,7 +17,7 @@ It's good to be able to run a test against the code as it is currently written, 
        assertThat(parse(null), is(new NullDocument()));
     }
 ```
-A failed assumption will lead to the test being marked as passing, regardless of what the code below the assumption may assert. In the future, this may change, and a failed assumption may lead to the test being ignored: however, third-party runners do not currently allow this option.
+The default JUnit runner treats tests with failing assumptions as ignored. Custom runners may behave differently.
 
 We have included assumeTrue for convenience, but thanks to the inclusion of Hamcrest, we do not need to create assumeEquals, assumeSame, and other analogues to the assert* methods. All of those functionalities are subsumed in assumeThat, with the appropriate matcher.
 
