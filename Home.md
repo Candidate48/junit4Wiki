@@ -9,6 +9,7 @@ Welcome to the JUnit wiki!
   * [4.9.1](https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.9.1.md)
   * [4.9](https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.9.md)
 * [[Maintainer Documentation]]
+* [[I want to help!]]
 * Latest JUnit Questions on StackOverflow: http://stackoverflow.com/questions/tagged/junit
 
 ##  JUnit Usage and Idioms
