@@ -49,3 +49,6 @@ Alternatively, use the `ExpectedException` rule. This rule lets you indicate not
 The expectMessage also lets you use Matchers, which gives you a bit more flexibility in your tests. An example:
 
 `thrown.expectMessage(JUnitMatchers.containsString("Size: 0"));`
+
+
+For an expanded discussion of the `ExpectedException` rule, see this [blog post](http://baddotrobot.com/blog/2012/03/27/expecting-exception-with-junit-rule/index.html).
