@@ -35,6 +35,9 @@ public class FooTest {
 }
 ```
 
+To run a test on the command line.  Use something like this:
+java -cp .:/usr/share/java/junit.jar org.junit.runner.JUnitCore [test class name]
+
 ### Notes
 
 * All test methods are annotated with @Test. Unlike JUnit3 tests, you do not need to prefix the method name with "test" (and usually don't)
