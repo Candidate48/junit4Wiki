@@ -35,3 +35,4 @@ Welcome to the JUnit wiki!
 ##  Third-party extensions
 
 * [[Custom Runners]]
+* [commons-testing/UtilityClassTestUtil][http://site.trajano.net/commons-testing/] per #646
