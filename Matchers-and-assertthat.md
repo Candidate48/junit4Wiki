@@ -67,8 +67,8 @@ JUnit includes useful matchers for use with the assertThat method, but they are 
 Useful Hamcrest CoreMatchers are included in the JUnit distribution
 - JavaDoc Hamcrest CoreMatchers [http://junit-team.github.com/junit/javadoc/latest/org/hamcrest/core/package-summary.html](http://junit-team.github.com/junit/javadoc/latest/org/hamcrest/core/package-summary.html)
 
-# Additional (Thirdparty) Matchers
-Other, potential Matchers out there include
+# Thirdparty Matchers
+Other, potentially Matchers out there include
 - [Excel spreadsheet matchers](https://github.com/tobyweston/simple-excel)
 - [JSON matchers](https://github.com/hertzsprung/hamcrest-json)
 - [XML/XPath matchers](https://code.google.com/p/xml-matchers/)
