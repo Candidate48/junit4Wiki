@@ -36,3 +36,4 @@ Welcome to the JUnit wiki!
 
 * [[Custom Runners]]
 * [net.trajano.commons:commons-testing for UtilityClassTestUtil](http://site.trajano.net/commons-testing/) per #646
+* [System Rules](http://stefanbirkner.github.io/system-rules) – A collection of JUnit rules for testing code that uses java.lang.System.
