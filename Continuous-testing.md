@@ -2,7 +2,7 @@ Continuous Testing allows for immediate feedback on JUnit test results within an
 
 ## Article
 This article explains the concepts further: 
-- http://blog.objectmentor.com/articles/2007/09/20/continuous-testing-explained
+- http://groups.csail.mit.edu/pag/continuoustesting/what.html
 
 ## IDE plugins
 Infinitest is an open source plugin for Eclipse or IntelliJ IDEA that provides continuous testing functionality:
