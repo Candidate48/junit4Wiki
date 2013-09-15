@@ -1,81 +1,82 @@
-JUnit FAQ
+##JUnit FAQ
 
-JUnit is a simple, open source framework to write and run repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks.
+_JUnit is a simple, open source framework to write and run repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks._
 
-Edited by Mike Clark (http://clarkware.com)
+Edited by [Mike Clark](mailto:mike@clarkware.com) (http://clarkware.com)
 
 Last modified on February 20, 2006
-Table of Contents
 
-    FAQ Info
-        Who is responsible for this FAQ?
-        How can I contribute to this FAQ?
-        Where do I get the latest version of this FAQ?
+###Table of Contents
 
-    Overview
-        What is JUnit?
-        Where is the JUnit home page?
-        Where are the JUnit mailing lists and forums?
-        Where is the JUnit documentation?
-        Where can I find articles on JUnit?
-        What's the latest news on JUnit?
-        How is JUnit licensed?
-        What awards has JUnit won?
+1. FAQ Info
+ 1. Who is responsible for this FAQ?
+ 2. How can I contribute to this FAQ?
+ 3. Where do I get the latest version of this FAQ?
 
-    Getting Started
-        Where do I download JUnit?
-        How do I install JUnit?
-        How do I uninstall JUnit?
-        How do I ask questions?
-        How do I submit bugs, patches, or feature requests?
+2. Overview
+ 1. What is JUnit?
+ 2. Where is the JUnit home page?
+ 3. Where are the JUnit mailing lists and forums?
+ 4. Where is the JUnit documentation?
+ 5. Where can I find articles on JUnit?
+ 6. What's the latest news on JUnit?
+ 7. How is JUnit licensed?
+ 8. What awards has JUnit won?
 
-    Writing Tests
-        How do I write and run a simple test?
-        How do I use a test fixture?
-        How do I test a method that doesn't return anything?
-        Under what conditions should I test get() and set() methods?
-        Under what conditions should I not test get() and set() methods?
-        How do I write a test that passes when an expected exception is thrown?
-        How do I write a test that fails when an unexpected exception is thrown?
-        How do I test protected methods?
-        How do I test private methods?
-        Why does JUnit only report the first failure in a single test?
-        In Java 1.4, 'assert' is a keyword. Won't this conflict with JUnit's assert() method?
-        How do I test things that must be run in a J2EE container (e.g. servlets, EJBs)?
-        Do I need to write a test class for every class I need to test?
-        Is there a basic template I can use to create a test?
-        How do I write a test for an abstract class?
-        When are tests garbage collected?
+3. Getting Started
+ 1. Where do I download JUnit?
+ 2. How do I install JUnit?
+ 3. How do I uninstall JUnit?
+ 4. How do I ask questions?
+ 5. How do I submit bugs, patches, or feature requests?
 
-    Organizing Tests
-        Where should I put my test files?
-        How can I run setUp() and tearDown() code once for all of my tests?
+4. Writing Tests
+ 1. How do I write and run a simple test?
+ 2. How do I use a test fixture?
+ 3. How do I test a method that doesn't return anything?
+ 4. Under what conditions should I test get() and set() methods?
+ 5. Under what conditions should I not test get() and set() methods?
+ 6. How do I write a test that passes when an expected exception is thrown?
+ 7. How do I write a test that fails when an unexpected exception is thrown?
+ 8. How do I test protected methods?
+ 9. How do I test private methods?
+ 10. Why does JUnit only report the first failure in a single test?
+ 11. In Java 1.4, 'assert' is a keyword. Won't this conflict with JUnit's assert() method?
+ 12. How do I test things that must be run in a J2EE container (e.g. servlets, EJBs)?
+ 13. Do I need to write a test class for every class I need to test?
+ 14. Is there a basic template I can use to create a test?
+ 15. How do I write a test for an abstract class?
+ 16. When are tests garbage collected?
 
-    Running Tests
-        What CLASSPATH settings are needed to run JUnit?
-        Why do I get a NoClassDefFoundError when trying to test JUnit or run the samples?
-        How do I run JUnit from my command window?
-        How do I run JUnit using Ant?
-        How do I use Ant to create HTML test reports?
-        How do I pass command-line arguments to a test execution?
-        Why do I get a LinkageError when using XML interfaces in my test class?
-        Why do I get the warning "AssertionFailedError: No tests found in XXX" when I run my test?
-        Why do I see "Unknown Source" in the stack trace of a test failure, rather than the source file's line number?
-        How do I organize all test classes in a TestSuite automatically and not use or manage a TestSuite explicitly?
+5. Organizing Tests
+ 1. Where should I put my test files?
+ 2. How can I run setUp() and tearDown() code once for all of my tests?
 
-    Best Practices
-        When should tests be written?
-        Do I have to write a test for everything?
-        How simple is 'too simple to break'?
-        How often should I run my tests?
-        What do I do when a defect is reported?
-        Why not just use System.out.println()?
-        Why not just use a debugger?
+6. Running Tests
+ 1. What CLASSPATH settings are needed to run JUnit?
+ 2. Why do I get a NoClassDefFoundError when trying to test JUnit or run the samples?
+ 3. How do I run JUnit from my command window?
+ 4. How do I run JUnit using Ant?
+ 5. How do I use Ant to create HTML test reports?
+ 6. How do I pass command-line arguments to a test execution?
+ 7. Why do I get a LinkageError when using XML interfaces in my test class?
+ 8. Why do I get the warning "AssertionFailedError: No tests found in XXX" when I run my test?
+ 9. Why do I see "Unknown Source" in the stack trace of a test failure, rather than the source file's line number?
+ 10. How do I organize all test classes in a TestSuite automatically and not use or manage a TestSuite explicitly?
 
-    Miscellaneous
-        How do I integrate JUnit with my IDE?
-        How do I launch a debugger when a test fails?
-        Where can I find unit testing frameworks similar to JUnit for other languages?
+7. Best Practices
+ 1. When should tests be written?
+ 2. Do I have to write a test for everything?
+ 3. How simple is 'too simple to break'?
+ 4. How often should I run my tests?
+ 5. What do I do when a defect is reported?
+ 6. Why not just use System.out.println()?
+ 7. Why not just use a debugger?
+
+8. Miscellaneous
+ 1. How do I integrate JUnit with my IDE?
+ 2. How do I launch a debugger when a test fails?
+ 3. Where can I find unit testing frameworks similar to JUnit for other languages?
 
 FAQ Info
 
