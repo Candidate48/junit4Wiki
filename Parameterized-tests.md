@@ -30,6 +30,36 @@ public class FibonacciTest {
 	 
 Each instance of FibonacciTest will be constructed using the two-argument constructor and the data values in the @Parameters method.
 
+## Using @Parameter for Field injection instead of Constructor
+
+It is also possible to inject data values directly into fields without needing a constructor using the @Parameter annotation, like so:
+
+```java
+@RunWith(Parameterized.class)
+public class FibonacciTest {
+    @Parameters
+    public static Collection<Object[]> data() {
+        return Arrays.asList(new Object[][] {
+                
+                 { 0, 0 }, { 1, 1 }, { 2, 1 }, { 3, 2 }, { 4, 3 }, { 5, 5 },{ 6, 8 }  
+           });
+    }
+
+    @Parameter // first data value (0) is default
+    public /* NOT private */ int fInput;
+
+    @Parameter(value = 1)
+    public /* NOT private */ int fExpected;
+
+    @Test
+    public void test() {
+        assertEquals(fExpected, Fibonacci.compute(fInput));
+    }
+}
+```
+
+This currently only works for public fields (but watch issue TBD).
+
 ## Identify Individual test cases
 In order to easily identify the individual test cases in a Parameterized test, you may provide a name using the @Parameters annotation. This name is allowed to contain placeholders that are replaced at runtime:
 
