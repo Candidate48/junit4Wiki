@@ -549,19 +549,19 @@ Last modified on February 20, 2006
 
     The resulting tests use JUnit's natural execution and reporting mechanism and, failure in one test does not affect the execution of the other tests. You generally want exactly one test to fail for any given bug, if you can manage it.
 
-    In Java 1.4, assert is a keyword. Won't this conflict with JUnit's assert() method?
+11. **In Java 1.4, assert is a keyword. Won't this conflict with JUnit's assert() method?**
 
     JUnit 3.7 deprecated assert() and replaced it with assertTrue(), which works exactly the same way.
 
     JUnit 4 is compatible with the assert keyword. If you run with the -ea JVM switch, assertions that fail will be reported by JUnit.
 
-11. **How do I test things that must be run in a J2EE container (e.g. servlets, EJBs)?**
+12. **How do I test things that must be run in a J2EE container (e.g. servlets, EJBs)?**
 
     Refactoring J2EE components to delegate functionality to other objects that don't have to be run in a J2EE container will improve the design and testability of the software.
 
     Cactus is an open source JUnit extension that can be used to test J2EE components in their natural environment.
 
-12. **Do I need to write a test class for every class I need to test?**
+13. **Do I need to write a test class for every class I need to test?**
 
     (Submitted by: J. B. Rainsberger)
 
@@ -573,7 +573,7 @@ Last modified on February 20, 2006
 
     [1] A test fixture is a common set of test data and collaborating objects shared by many tests. Generally they are implemented as instance variables in the test class.
 
-13. **Is there a basic template I can use to create a test?**
+14. **Is there a basic template I can use to create a test?**
 
     (Submitted by: Eric Armstrong)
 
@@ -619,11 +619,11 @@ Last modified on February 20, 2006
         }
               
 
-14. **How do I write a test for an abstract class?**
+15. **How do I write a test for an abstract class?**
 
     Refer to http://c2.com/cgi/wiki?AbstractTestCases.
 
-15. **When are tests garbage collected?**
+16. **When are tests garbage collected?**
 
     (Submitted by: Timothy Wall and Kent Beck)
 
