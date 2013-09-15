@@ -58,7 +58,7 @@ public class FibonacciTest {
 }
 ```
 
-This currently only works for public fields (but watch issue TBD).
+This currently only works for public fields (see https://github.com/junit-team/junit/pull/737).
 
 ## Identify Individual test cases
 In order to easily identify the individual test cases in a Parameterized test, you may provide a name using the @Parameters annotation. This name is allowed to contain placeholders that are replaced at runtime:
