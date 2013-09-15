@@ -79,7 +79,7 @@ Last modified on February 20, 2006
 ###FAQ Info
 1. **Who is responsible for this FAQ?**
 
-    The current version of this FAQ is maintained by Mike Clark.
+    The current version of this FAQ is maintained by [Mike Clark](mailto:mike@clarkware.com).
 
     Most of the wisdom contained in this FAQ comes from the collective insights and hard-won experiences of the many good folks who participate on the JUnit mailing list and the JUnit community at large.
 
@@ -89,13 +89,13 @@ Last modified on February 20, 2006
 
     Your contributions to this FAQ are greatly appreciated! The JUnit community thanks you in advance.
 
-    To contribute to this FAQ, simply write a JUnit-related question and answer, then send the unformatted text to Mike Clark. Corrections to this FAQ are always appreciated, as well.
+    To contribute to this FAQ, simply write a JUnit-related question and answer, then send the unformatted text to [Mike Clark](mailto:mike@clarkware.com). Corrections to this FAQ are always appreciated, as well.
 
     No reasonable contribution will be denied. Your name will always appear along with any contribution you make.
 
 3. **Where do I get the latest version of this FAQ?**
 
-    The master copy of this FAQ is available at http://junit.sourceforge.net/doc/faq/faq.htm.
+    The master copy of this FAQ is available at <http://junit.sourceforge.net/doc/faq/faq.htm>.
 
     The JUnit distribution also includes this FAQ in the doc directory.
 
@@ -112,54 +112,54 @@ Last modified on February 20, 2006
 
 2. **Where is the JUnit home page?**
 
-    The official JUnit home page is http://junit.org.
+    The official JUnit home page is <http://junit.org>.
 
 3. **Where are the JUnit mailing lists and forums?**
 
     There are 3 mailing lists dedicated to everything JUnit:
-        JUnit user list. (Search it for answers to frequently asked questions not included here.)
-        JUnit announcements
-        JUnit developer list
+
+* [JUnit user list](http://groups.yahoo.com/group/junit/). (Search it for answers to frequently asked questions not included here.)
+* JUnit announcements (Link was to: <http://lists.sourceforge.net/lists/listinfo/junit-announce>)
+* JUnit developer list (Link was to: <http://lists.sourceforge.net/lists/listinfo/junit-devel>)
 
 4. **Where is the JUnit documentation?**
 
     The following documents are included in the JUnit distribution in the doc directory:
-        JUnit Test Infected: Programmers Love Writing Tests
-        JUnit Cookbook
-        JUnit - A Cook's Tour
-        JUnit FAQ
+
+* JUnit Test Infected: Programmers Love Writing Tests (Old link: <http://junit.sourceforge.net/doc/testinfected/testing.htm>)
+* JUnit Cookbook (Old link: <http://junit.sourceforge.net/doc/cookbook/cookbook.htm>)
+* JUnit - A Cook's Tour (Old link: <http://junit.sourceforge.net/doc/cookstour/cookstour.htm>)
+* JUnit FAQ (Old link: <http://junit.sourceforge.net/doc/faq/faq.htm>)
 
 5. **Where can I find articles on JUnit?**
 
-    The JUnit home page maintains a list of JUnit articles.
+    The JUnit home page maintains a list of JUnit articles. (Dead link: <http://www.junit.org/news/article/index.htm>)
 
 6. **What's the latest news on JUnit?**
 
-    The JUnit home page publishes the latest JUnit news.
+    The JUnit home page publishes the latest JUnit news. (Dead link: <http://www.junit.org/news/index.htm>)
 
 7. **How is JUnit licensed?**
 
-    JUnit is Open Source Software, released under the Eclipse Public License Version 1.0 and hosted on SourceForge.
+    JUnit is [Open Source Software](http://www.opensource.org/), released under the [Eclipse Public License Version 1.0](http://opensource.org/licenses/eclipse-1.0.html) and hosted on [GitHub](https://github.com/junit-team/junit/).
 
 8. **What awards has JUnit won?**
 
-        2002 JavaWorld Editors' Choice Awards (ECA)
-
+* [2002 JavaWorld Editors' Choice Awards (ECA)](http://www.javaworld.com/javaworld/jw-03-2002/jw-0326-awards.html)  
         Best Java Performance Monitoring/Testing Tool
 
-        2001 JavaWorld Editors' Choice Awards (ECA)
-
+* [2001 JavaWorld Editors' Choice Awards (ECA)](http://www.javaworld.com/javaworld/jw-06-2001/j1-01-awards.html)  
         Best Java Performance Monitoring/Testing Tool
 
 ###Getting Started
 
 1. **Where do I download JUnit?**
 
-    The latest version of JUnit is available on SourceForge.
+    The latest version of JUnit is available on SourceForge. (Old link: <http://sourceforge.net/project/showfiles.php?group_id=15278>) (Needs link: <https://github.com/junit-team/junit/wiki/Download-and-Install>)
 
 2. **How do I install JUnit?**
 
-        First, download the latest version of JUnit, referred to below as junit.zip.
+        First, _download_(needs link: <https://github.com/junit-team/junit/wiki/Download-and-Install>) the latest version of JUnit, referred to below as 'junit.zip'.
 
         Then install JUnit on your platform of choice:
 
