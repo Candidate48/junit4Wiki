@@ -1,5 +1,3 @@
-##JUnit FAQ
-
 _JUnit is a simple, open source framework to write and run repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks._
 
 Edited by [Mike Clark](mailto:mike@clarkware.com) (http://clarkware.com)
@@ -78,9 +76,8 @@ Last modified on February 20, 2006
  2. How do I launch a debugger when a test fails?
  3. Where can I find unit testing frameworks similar to JUnit for other languages?
 
-FAQ Info
-
-    Who is responsible for this FAQ?
+###FAQ Info
+1. Who is responsible for this FAQ?
 
     The current version of this FAQ is maintained by Mike Clark.
 
@@ -88,7 +85,7 @@ FAQ Info
 
     If you see your genius represented anywhere in this FAQ without due credit to you, please send me an email and I'll make things right.
 
-    How can I contribute to this FAQ?
+2. How can I contribute to this FAQ?
 
     Your contributions to this FAQ are greatly appreciated! The JUnit community thanks you in advance.
 
@@ -96,15 +93,15 @@ FAQ Info
 
     No reasonable contribution will be denied. Your name will always appear along with any contribution you make.
 
-    Where do I get the latest version of this FAQ?
+3. Where do I get the latest version of this FAQ?
 
     The master copy of this FAQ is available at http://junit.sourceforge.net/doc/faq/faq.htm.
 
     The JUnit distribution also includes this FAQ in the doc directory.
 
-Overview
+###Overview
 
-    What is JUnit?
+1. What is JUnit?
 
     JUnit is a simple, open source framework to write and run repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks. JUnit features include:
         Assertions for testing expected results
@@ -113,18 +110,18 @@ Overview
 
     JUnit was originally written by Erich Gamma and Kent Beck.
 
-    Where is the JUnit home page?
+2. Where is the JUnit home page?
 
     The official JUnit home page is http://junit.org.
 
-    Where are the JUnit mailing lists and forums?
+3. Where are the JUnit mailing lists and forums?
 
     There are 3 mailing lists dedicated to everything JUnit:
         JUnit user list. (Search it for answers to frequently asked questions not included here.)
         JUnit announcements
         JUnit developer list
 
-    Where is the JUnit documentation?
+4. Where is the JUnit documentation?
 
     The following documents are included in the JUnit distribution in the doc directory:
         JUnit Test Infected: Programmers Love Writing Tests
@@ -132,19 +129,19 @@ Overview
         JUnit - A Cook's Tour
         JUnit FAQ
 
-    Where can I find articles on JUnit?
+5. Where can I find articles on JUnit?
 
     The JUnit home page maintains a list of JUnit articles.
 
-    What's the latest news on JUnit?
+6. What's the latest news on JUnit?
 
     The JUnit home page publishes the latest JUnit news.
 
-    How is JUnit licensed?
+7. How is JUnit licensed?
 
     JUnit is Open Source Software, released under the Eclipse Public License Version 1.0 and hosted on SourceForge.
 
-    What awards has JUnit won?
+8. What awards has JUnit won?
 
         2002 JavaWorld Editors' Choice Awards (ECA)
 
@@ -154,13 +151,13 @@ Overview
 
         Best Java Performance Monitoring/Testing Tool
 
-Getting Started
+###Getting Started
 
-    Where do I download JUnit?
+1. Where do I download JUnit?
 
     The latest version of JUnit is available on SourceForge.
 
-    How do I install JUnit?
+2. How do I install JUnit?
 
         First, download the latest version of JUnit, referred to below as junit.zip.
 
@@ -197,7 +194,7 @@ Getting Started
 
         Finally, read the documentation.
 
-    How do I uninstall JUnit?
+3. How do I uninstall JUnit?
 
         Delete the directory structure where you unzipped the JUnit distribution.
 
@@ -205,7 +202,7 @@ Getting Started
 
     JUnit does not modify the registry so simply removing all the files will fully uninstall it.
 
-    How do I ask questions?
+4. How do I ask questions?
 
     Questions that are not answered in the FAQ or in the documentation should be posted to the jGuru discussion forum or the JUnit user mailing list.
 
@@ -217,15 +214,15 @@ Getting Started
     Please do NOT submit bugs, patches, or feature requests to the discussion forum or mailing lists.
     Refer instead to "How do I submit bugs, patches, or feature requests?".
 
-    How do I submit bugs, patches, or feature requests?
+5. How do I submit bugs, patches, or feature requests?
 
     JUnit celebrates programmers testing their own software. In this spirit, bugs, patches, and feature requests that include JUnit tests have a better chance of being addressed than those without.
 
     JUnit is hosted on SourceForge. Please use the tools provided by SourceForge for your submissions.
 
-Writing Tests
+###Writing Tests
 
-    How do I write and run a simple test?
+1. How do I write and run a simple test?
 
         Create a class:
 
@@ -290,7 +287,7 @@ Writing Tests
             OK (1 tests)
             	    
 
-    How do I use a test fixture?
+2. How do I use a test fixture?
 
     (Submitted by: Jeff Nielsen)
 
@@ -379,7 +376,7 @@ Writing Tests
         deleteOutputFile()
                 
 
-    How do I test a method that doesn't return anything?
+3. How do I test a method that doesn't return anything?
 
     (Submitted by: Dave Astels)
 
@@ -404,7 +401,7 @@ Writing Tests
 
     A related issue is to design for testing. For example, if you have a method that is meant to output to a file, don't pass in a filename, or even a FileWriter. Instead, pass in a Writer. That way you can pass in a StringWriter to capture the output for testing purposes. Then you can add a method (e.g. writeToFileNamed(String filename)) to encapsulate the FileWriter creation.
 
-    Under what conditions should I test get() and set() methods?
+4. Under what conditions should I test get() and set() methods?
 
     Unit tests are intended to alleviate fear that something might break. If you think a get() or set() method could reasonably break, or has in fact contributed to a defect, then by all means write a test.
 
@@ -412,7 +409,7 @@ Writing Tests
 
     Refer also to "How simple is 'too simple to break'?".
 
-    Under what conditions should I not test get() and set() methods?
+5. Under what conditions should I not test get() and set() methods?
 
     (Submitted by: J. B. Rainsberger)
 
@@ -452,7 +449,7 @@ Writing Tests
         }
               
 
-    How do I write a test that passes when an expected exception is thrown?
+6. How do I write a test that passes when an expected exception is thrown?
 
     Add the optional expected attribute to the @Test annotation. The following is an example test that passes when the expected IndexOutOfBoundsException is raised:
 
@@ -465,7 +462,7 @@ Writing Tests
         }
           
 
-    How do I write a test that fails when an unexpected exception is thrown?
+7. How do I write a test that fails when an unexpected exception is thrown?
 
     Declare the exception in the throws clause of the test method and don't catch the exception within the test method. Uncaught exceptions will cause the test to fail with an error.
 
@@ -482,13 +479,13 @@ Writing Tests
         }
           
 
-    How do I test protected methods?
+8. How do I test protected methods?
 
     Place your tests in the same package as the classes under test.
 
     Refer to "Where should I put my test files?" for examples of how to organize tests for protected method access.
 
-    How do I test private methods?
+9. How do I test private methods?
 
     Testing private methods may be an indication that those methods should be moved into another class to promote reusability.
 
@@ -496,7 +493,7 @@ Writing Tests
 
     If you are using JDK 1.3 or higher, you can use reflection to subvert the access control mechanism with the aid of the PrivilegedAccessor. For details on how to use it, read this article.
 
-    Why does JUnit only report the first failure in a single test?
+10. Why does JUnit only report the first failure in a single test?
 
     (Submitted by: J. B. Rainsberger)
 
@@ -558,13 +555,13 @@ Writing Tests
 
     JUnit 4 is compatible with the assert keyword. If you run with the -ea JVM switch, assertions that fail will be reported by JUnit.
 
-    How do I test things that must be run in a J2EE container (e.g. servlets, EJBs)?
+11. How do I test things that must be run in a J2EE container (e.g. servlets, EJBs)?
 
     Refactoring J2EE components to delegate functionality to other objects that don't have to be run in a J2EE container will improve the design and testability of the software.
 
     Cactus is an open source JUnit extension that can be used to test J2EE components in their natural environment.
 
-    Do I need to write a test class for every class I need to test?
+12. Do I need to write a test class for every class I need to test?
 
     (Submitted by: J. B. Rainsberger)
 
@@ -634,9 +631,9 @@ Writing Tests
 
     Therefore, if you allocate external or limited resources in a test, you are responsible for freeing those resources. Explicitly setting an object to null in the tearDown() method, for example, allows it to be garbage collected before the end of the entire test run.
 
-Organizing Tests
+###Organizing Tests
 
-    Where should I put my test files?
+1. Where should I put my test files?
 
     You can place your tests in the same package and directory as the classes under test.
 
@@ -669,7 +666,7 @@ Organizing Tests
 
     Some developers have argued in favor of putting the tests in a sub-package of the classes under test (e.g. com.xyz.test). The author of this FAQ sees no clear advantage to adopting this approach and believes that said developers also put their curly braces on the wrong line. :-)
 
-    How can I run setUp() and tearDown() code once for all of my tests?
+2. How can I run setUp() and tearDown() code once for all of my tests?
 
     The desire to do this is usually a symptom of excessive coupling in your design. If two or more tests must share the same test fixture state, then the tests may be trying to tell you that the classes under test have some undesirable dependencies.
 
@@ -737,9 +734,9 @@ Organizing Tests
         oneTimeTearDown()
         	
 
-Running Tests
+###Running Tests
 
-    What CLASSPATH settings are needed to run JUnit?
+1. What CLASSPATH settings are needed to run JUnit?
 
     (Submitted by: Eric Armstrong)
 
@@ -758,7 +755,7 @@ Running Tests
 
     export CLASSPATH=$JUNIT_HOME/junit.jar:/myproject/classes:/myproject/lib/something.jar
 
-    Why do I get a NoClassDefFoundError when trying to test JUnit or run the samples?
+2. Why do I get a NoClassDefFoundError when trying to test JUnit or run the samples?
 
     (Submitted by: J.B. Rainsberger and Jason Rogers)
 
@@ -770,7 +767,7 @@ Running Tests
 
     If the CLASSPATH seems mysterious, read this!
 
-    How do I run JUnit from my command window?
+3. How do I run JUnit from my command window?
 
     (Submitted by: Eric Armstrong)
 
@@ -780,7 +777,7 @@ Running Tests
 
         java org.junit.runner.JUnitCore <test class name>
 
-    How do I run JUnit using Ant?
+4. How do I run JUnit using Ant?
 
     (Submitted by: Eric Armstrong)
 
@@ -822,7 +819,7 @@ Running Tests
 
     Refer to the JUnit Ant Task for more information.
 
-    How do I use Ant to create HTML test reports?
+5. How do I use Ant to create HTML test reports?
 
     (Submitted by: Eric Armstrong and Steffen Gemkow)
 
@@ -859,7 +856,7 @@ Running Tests
 
     Refer to the JUnit Ant Task for more information.
 
-    How do I pass command-line arguments to a test execution?
+6. How do I pass command-line arguments to a test execution?
 
     Use the -D JVM command-line options, as in:
 
@@ -867,7 +864,7 @@ Running Tests
 
     If the number of parameters on the command line gets unweildy, pass in the location of a property file that defines a set of parameters. Alternatively, the JUnit-addons package contains the XMLPropertyManager and PropertyManager classes that allow you to define a property file (or XML file) containing test parameters.
 
-    Why do I get a LinkageError when using XML interfaces in my test?
+7. Why do I get a LinkageError when using XML interfaces in my test?
 
     (Submitted by: Scott Stirling)
 
@@ -899,7 +896,7 @@ Running Tests
 
     You could try to hack around this in the JUnit source by catching the LinkageError in TestCaseClassLoader's loadClass() method and then making a recovery call to findSystemClass() -- thereby delegating to the system loader after the violation has been caught. But this hack only works some of the time, because now you can have the reverse problem where the JUnit loader will load a host of org.w3c.dom/org.xml.sax classes, and then the system loader violates the loader contraints at some point when it tries to do exactly what I described above with JAXP because it doesn't ever delegate to its logical child (the JUnit loader). Inevitably, if your test cases use many JAXP and related XML classes, one or the other classloader will end up violating the constraints whatever you do.
 
-    Why do I get the warning "AssertionFailedError: No tests found in XXX" when I run my test?
+8. Why do I get the warning "AssertionFailedError: No tests found in XXX" when I run my test?
 
     Make sure you have more or more method annotated with @Test.
 
@@ -910,7 +907,7 @@ Running Tests
         }
               
 
-    Why do I see "Unknown Source" in the stack trace of a test failure, rather than the source file's line number?
+9. Why do I see "Unknown Source" in the stack trace of a test failure, rather than the source file's line number?
 
     The debug option for the Java compiler must be enabled in order to see source file and line number information in a stack trace.
 
@@ -924,7 +921,7 @@ Running Tests
 
     Compiling the test source with debug enabled will show the line where the assertion failed. Compiling the non-test source with debug enabled will show the line where an exception was raised in the class under test.
 
-    How do I organize all test classes in a TestSuite automatically and not use or manage a TestSuite explicitly?
+10. How do I organize all test classes in a TestSuite automatically and not use or manage a TestSuite explicitly?
 
     (Submitted by: Bill de hora)
 
@@ -963,9 +960,9 @@ Running Tests
 
         An example of this approach is at http://www.javaworld.com/javaworld/jw-12-2000/jw-1221-junit_p.html.
 
-Best Practices
+###Best Practices
 
-    When should tests be written?
+1. When should tests be written?
 
     Tests should be written before the code. Test-first programming is practiced by only writing new code when an automated test is failing.
 
@@ -975,7 +972,7 @@ Best Practices
 
     Test-driven development is a lot more fun than writing tests after the code seems to be working. Give it a try!
 
-    Do I have to write a test for everything?
+2. Do I have to write a test for everything?
 
     No, just test everything that could reasonably break.
 
@@ -983,7 +980,7 @@ Best Practices
 
     If something is difficult to test, it's usually an opportunity for a design improvement. Look to improve the design so that it's easier to test, and by doing so a better design will usually emerge.
 
-    How simple is 'too simple to break'?
+3. How simple is 'too simple to break'?
 
     (Submitted by: J. B. Rainsberger)
 
@@ -1024,7 +1021,7 @@ Best Practices
 
     The loop, as you can see, never terminates.
 
-    How often should I run my tests?
+4. How often should I run my tests?
 
     Run all your unit tests as often as possible, ideally every time the code is changed. Make sure all your unit tests always run at 100%. Frequent testing gives you confidence that your changes didn't break anything and generally lowers the stress of programming in the dark.
 
@@ -1034,31 +1031,31 @@ Best Practices
 
     If you're using Eclipse, be sure to check out David Saff's continuous testing plug-in.
 
-    What do I do when a defect is reported?
+5. What do I do when a defect is reported?
 
     Test-driven development generally lowers the defect density of software. But we're all fallible, so sometimes a defect will slip through. When this happens, write a failing test that exposes the defect. When the test passes, you know the defect is fixed!
 
     Don't forget to use this as a learning opportunity. Perhaps the defect could have been prevented by being more aggressive about testing everything that could reasonably break.
 
-    Why not just use System.out.println()?
+6. Why not just use System.out.println()?
 
     Inserting debug statements into code is a low-tech method for debugging it. It usually requires that output be scanned manually every time the program is run to ensure that the code is doing what's expected.
 
     It generally takes less time in the long run to codify expectations in the form of an automated JUnit test that retains its value over time. If it's difficult to write a test to assert expectations, the tests may be telling you that shorter and more cohesive methods would improve your design.
 
-    Why not just use a debugger?
+7. Why not just use a debugger?
 
     Debuggers are commonly used to step through code and inspect that the variables along the way contain the expected values. But stepping through a program in a debugger is a manual process that requires tedious visual inspections. In essence, the debugging session is nothing more than a manual check of expected vs. actual results. Moreover, every time the program changes we must manually step back through the program in the debugger to ensure that nothing broke.
 
     It generally takes less time to codify expectations in the form of an automated JUnit test that retains its value over time. If it's difficult to write a test to assert expected values, the tests may be telling you that shorter and more cohesive methods would improve your design.
 
-Miscellaneous
+###Miscellaneous
 
-    How do I integrate JUnit with my IDE?
+1. How do I integrate JUnit with my IDE?
 
     The JUnit home page maintains a list of IDE integration instructions.
 
-    How do I launch a debugger when a test fails?
+2. How do I launch a debugger when a test fails?
 
     Start the TestRunner under the debugger and configure the debugger so that it catches the junit.framework.AssertionFailedError.
 
@@ -1066,7 +1063,7 @@ Miscellaneous
 
     Notice that this will only launch the debugger when an expected failure occurs.
 
-    Where can I find unit testing frameworks similar to JUnit for other languages?
+3. Where can I find unit testing frameworks similar to JUnit for other languages?
 
     XProgramming.com maintains a complete list of available xUnit testing frameworks.
 
