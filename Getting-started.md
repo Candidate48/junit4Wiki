@@ -26,6 +26,7 @@ public class FooTest {
 
     @Test
     public void thisAlwaysPasses() {
+
     }
 
     @Test
