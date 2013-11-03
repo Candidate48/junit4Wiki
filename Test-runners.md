@@ -13,7 +13,7 @@ or this from the command line, with both your test class and junit on the classp
 This usage is documented further here: http://junit.org/apidocs/junit/textui/TestRunner.html
 
 ### Using older runners with Adapter
-`JUnit4Adapter` enables running the new JUnit4 tests using the old JUnit runners.  To us it add the following  to a test class:
+`JUnit4Adapter` enables running the new JUnit4 tests using the old JUnit runners. To use it add the following  to a test class:
 ```java
       public static Test suite() {
         return new JUnit4TestAdapter(AdditionAllTests.class);
