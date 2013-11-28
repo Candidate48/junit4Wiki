@@ -1,4 +1,4 @@
-To download and install JUnit you currently have the following options.123
+To download and install JUnit you currently have the following options.
  
 # Plain-old JAR
 
