@@ -1,5 +1,4 @@
-
-
+Welcome to the JUnit wiki!
 * [[Download and Install]]
 * [[Getting Started]]
 * Release Notes
