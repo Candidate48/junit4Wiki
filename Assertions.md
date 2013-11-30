@@ -87,5 +87,10 @@ public class AssertTests {
     assertThat(7, not(CombinableMatcher.<Integer> either(equalTo(3)).or(equalTo(4))));
     assertThat(new Object(), not(sameInstance(new Object())));
   }
+
+  @Test
+  public void testAssertTrue() {
+    org.junit.Assert.assertTrue("failure - should be true", true);
+  }
 }
 ```
