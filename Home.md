@@ -10,7 +10,7 @@ Welcome to the JUnit wiki!
 * [[Maintainer Documentation]]
 * [[I want to help!]]
 * Latest JUnit Questions on StackOverflow: http://stackoverflow.com/questions/tagged/junit
-* [JavaDocs](http://junit.sourceforge.net/javadoc/)
+* [JavaDocs](http://junit.org/javadoc/latest/)
 
 ##  JUnit Usage and Idioms
 * [[Assertions]]
