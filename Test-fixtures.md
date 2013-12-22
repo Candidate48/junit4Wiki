@@ -39,18 +39,18 @@ public class TestFixturesExample {
   @BeforeClass
   public static void setUpClass() {
     System.out.println("@BeforeClass setUpClass");
-    MyExpensiveManagedResource = new ExpensiveManagedResource();
+    myExpensiveManagedResource = new ExpensiveManagedResource();
   }
 
   @AfterClass
   public static void tearDownClass() throws IOException {
     System.out.println("@AfterClass tearDownClass");
-    MyExpensiveManagedResource.close();
-    MyExpensiveManagedResource = null;
+    myExpensiveManagedResource.close();
+    myExpensiveManagedResource = null;
   }
 
   private ManagedResource myManagedResource;
-  private static ExpensiveManagedResource MyExpensiveManagedResource;
+  private static ExpensiveManagedResource myExpensiveManagedResource;
 
   private void println(String string) {
     System.out.println(string);
