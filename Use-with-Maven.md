@@ -11,7 +11,7 @@
 
 ## Execution
 
-See [Maven Surefire plugin](http://maven.apache.org/plugins/maven-surefire-plugin/).
+See [Maven Surefire plugin](http://maven.apache.org/plugins/maven-surefire-plugin/), and, for Integration Testing the [Maven Failsafe Plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
 
 ## Use JUnit and Hamcrest in Maven
 
