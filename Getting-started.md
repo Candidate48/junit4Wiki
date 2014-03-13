@@ -1,8 +1,6 @@
-# Getting Started
+*Note:** This is very much a work in progress.
 
-**Note:** This is very much a work in progress.
-
-## Creating a New Test Case
+### Creating a New Test Case
 
 Here is a template for writing JUnit4-style tests:
 
@@ -39,7 +37,7 @@ public class FooTest {
 To run a test on the command line.  Use something like this:
 java -cp .:/usr/share/java/junit.jar org.junit.runner.JUnitCore [test class name]
 
-### Notes
+#### Notes
 
 * All test methods are annotated with @Test. Unlike JUnit3 tests, you do not need to prefix the method name with "test" (and usually don't)
 * Do not have your test classes extend `junit.framework.TestCase` (directly or indirectly).
