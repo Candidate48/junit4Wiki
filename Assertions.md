@@ -33,7 +33,7 @@ public class AssertTests {
 
   @Test
   public void testAssertEquals() {
-    org.junit.Assert.assertEquals("failure - strings not same", 5l, 5l);
+    org.junit.Assert.assertEquals("failure - strings are not equal", "text", "text");
   }
 
   @Test
