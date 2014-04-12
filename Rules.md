@@ -345,7 +345,7 @@ finished middle rule
 finished outer rule
 ```
 
-## Custom Rules ##
+# Custom Rules #
 
 Most custom rules can be implemented as an extension of the `ExternalResource` rule. However, if you need more information about the test class or method in question, you'll need to implement the `TestRule` interface.
 
