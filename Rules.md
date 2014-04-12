@@ -344,3 +344,78 @@ finished inner rule
 finished middle rule
 finished outer rule
 ```
+
+## Custom Rules ##
+
+Most custom rules can be implemented as an extension of the `ExternalResource` rule. However, if you need more information about the test class or method in question, you'll need to implement the `TestRule` interface.
+
+```java
+import org.junit.rules.TestRule;
+import org.junit.runner.Description;
+import org.junit.runners.model.Statement;
+
+public class IdentityRule implements TestRule {
+  @Override
+  public Statement apply(final Statement base, final Description description) {
+    return base;
+  }
+}
+```
+
+Of course, the power from implementing `TestRule` comes from using a combination of custom constructors, adding methods to the class for use in tests, and wrapping the provided `Statement` in a new `Statement`. For instance, consider the following test rule that provides a named logger for every test:
+
+```java
+package org.example.junit;
+
+import java.util.logging.Logger;
+
+import org.junit.rules.TestRule;
+import org.junit.runner.Description;
+import org.junit.runners.model.Statement;
+
+public class TestLogger implements TestRule {
+  private Logger logger;
+
+  public Logger getLogger() {
+    return this.logger;
+  }
+
+  @Override
+  public Statement apply(final Statement base, final Description description) {
+    return new Statement() {
+      @Override
+      public void evaluate() throws Throwable {
+        logger = Logger.getLogger(description.getTestClass().getName() + '.' + description.getDisplayName());
+        try {
+          base.evaluate();
+        } finally {
+          logger = null;
+        }
+      }
+    };
+  }
+}
+```
+
+Then that rule could be applied like so:
+
+```java
+import java.util.logging.Logger;
+
+import org.example.junit.TestLogger;
+import org.junit.Rule;
+import org.junit.Test;
+
+public class MyLoggerTest {
+
+  @Rule
+  public TestLogger logger = new TestLogger();
+
+  @Test
+  public void checkOutMyLogger() {
+    final Logger log = logger.getLogger();
+    log.warn("Your test is showing!");
+  }
+
+}
+```
