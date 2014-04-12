@@ -9,8 +9,8 @@ Welcome to the JUnit wiki!
   * [4.9](https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.9.md)
 * [[Maintainer Documentation]]
 * [[I want to help!]]
-* Latest JUnit Questions on StackOverflow: http://stackoverflow.com/questions/tagged/junit
-* [JavaDocs](http://junit.org/javadoc/latest/)
+* [Latest JUnit Questions on StackOverflow](https://stackoverflow.com/questions/tagged/junit)
+* [Latest JUnit API JavaDocs](http://junit.org/javadoc/latest/)
 
 ##  JUnit Usage and Idioms
 * [[Assertions]] - your bread and butter for unit testing
