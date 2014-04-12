@@ -13,23 +13,23 @@ Welcome to the JUnit wiki!
 * [JavaDocs](http://junit.org/javadoc/latest/)
 
 ##  JUnit Usage and Idioms
-* [[Assertions]]
-* [[Test Runners]]
-* [[Aggregating tests in Suites]]
-* [[Test Execution Order]]
-* [[Exception Testing]]
-* [[Matchers and assertThat]]
-* [[Ignoring Tests]]
-* [[Timeout for Tests]]
-* [[Parameterized Tests]]
-* [[Assumptions with Assume]]
-* [[Rules]]
-* [[Theories]]
-* [[Test Fixtures]]
-* [[Categories]]
-* [[Use with Maven]]
-* [[Use with Gradle]]
-* [[Multithreaded code and Concurrency]]
+* [[Assertions]] - your bread and butter for unit testing
+* [[Test Runners]] - how tests should be executed
+* [[Aggregating tests in Suites]] - how to combine multiple related tests into a test suite
+* [[Test Execution Order]] - specifying what order to run unit tests
+* [[Exception Testing]] - how to specify expected exceptions in unit tests
+* [[Matchers and assertThat]] - how to use Hamcrest matchers and more descriptive assertions
+* [[Ignoring Tests]] - how to disable test methods or classes
+* [[Timeout for Tests]] - how to specify maximum execution times for tests
+* [[Parameterized Tests]] - writing tests that can be executed multiple times with different parameter values
+* [[Assumptions with Assume]] - similar to assertions, but without making tests fail
+* [[Rules]] - stop extending abstract test classes and start writing test rules
+* [[Theories]] - write tests that are more like scientific experiments using randomly generated data
+* [[Test Fixtures]] - specify set up and clean up methods on a per-method and per-class basis
+* [[Categories]] - group your tests together for easier test filtering
+* [[Use with Maven]] - how to use JUnit with your Maven build
+* [[Use with Gradle]] - how to use JUnit with your Gradle build
+* [[Multithreaded code and Concurrency]] - basic ideas behind testing concurrent code
 * [[Java contract test helpers]]
 * [[Continuous Testing]]
 
