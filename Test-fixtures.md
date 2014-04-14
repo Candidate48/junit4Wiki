@@ -9,8 +9,6 @@ JUnit provides annotations so that test classes can have fixture run before or a
 There are four fixture annotations: two for class-level fixtures and two for method-level ones. At the
 class level, you have `@BeforeClass` and `@AfterClass`, and at the method (or test) level, you have `@Before` and `@After`.
 
-There is a simple basic rule for coding fixtures: **do not assume that every test will be executed with a separate, fresh instance.** Instead, ensure your fixture code does proper initialization and cleanup.
-
 A deeper explanation of fixtures, and how they could also be implemented using `Rules` is discussed [here]( https://garygregory.wordpress.com/2011/09/25/understaning-junit-method-order-execution/).
 
 An example of usage:
