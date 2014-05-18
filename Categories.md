@@ -48,3 +48,25 @@ public class SlowTestSuite {
   // Will run A.b, but not A.a or B.c
 }
 ```
+
+## Using categories with Maven
+
+You can use categories with either [maven-surefire-plugin][surefire] (for unit tests) or [maven-failsafe-plugin][failsafe] (for integration tests). Using either plugin, you can configure a list of categories to include or exclude. Without using either option, all tests will be executed by default.
+
+```xml
+<build>
+  <plugins>
+    <plugin>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <configuration>
+        <groups>com.example.FastTests,com.example.RegressionTests</groups>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+```
+
+Similarly, to exclude a certain list of categories, you would use the `<excludedGroups/>` configuration element.
+
+[surefire]: http://maven.apache.org/surefire/maven-surefire-plugin/examples/junit.html
+[failsafe]: http://maven.apache.org/surefire/maven-failsafe-plugin/examples/junit.html
