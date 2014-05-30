@@ -38,5 +38,6 @@ Welcome to the JUnit wiki!
 * [[Custom Runners]]
 * [net.trajano.commons:commons-testing for UtilityClassTestUtil](http://site.trajano.net/commons-testing/) per #646
 * [System Rules](http://stefanbirkner.github.io/system-rules) – A collection of JUnit rules for testing code that uses java.lang.System.
-* [JUnit Toolbox](https://junit-toolbox.googlecode.com/) - Provides runners for parallel testing, a `PoolingWait` class to ease asynchronous testing, and a `WildcardPatternSuite` which allow you to specify wildcard patterns instead of explicitly listing all classes when you create a suite class.
-* [junit-quickcheck](https://github.com/pholser/junit-quickcheck) - QuickCheck-style parameter suppliers for JUnit theories. Uses [junit.contrib's version of the theories machinery](https://github.com/junit-team/junit.contrib/tree/master/theories), which respects generics on theory parameters.
+* [JUnit Toolbox](https://junit-toolbox.googlecode.com/) – Provides runners for parallel testing, a `PoolingWait` class to ease asynchronous testing, and a `WildcardPatternSuite` which allow you to specify wildcard patterns instead of explicitly listing all classes when you create a suite class.
+* [junit-dataprovider](https://github.com/TNG/junit-dataprovider) – A TestNG like dataprovider runner for JUnit.
+* [junit-quickcheck](https://github.com/pholser/junit-quickcheck) – QuickCheck-style parameter suppliers for JUnit theories. Uses [junit.contrib's version of the theories machinery](https://github.com/junit-team/junit.contrib/tree/master/theories), which respects generics on theory parameters.
