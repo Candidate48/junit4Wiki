@@ -3,7 +3,16 @@ The basic steps for creating a pull request are explained in [CONTRIBUTING.md](h
 ## Squashing commits
 
 Sometimes you add further commits to your pull request in order to apply the recommendations of the
-code review. Your commit log may look like this:
+code review. First, you may want to merge from master:
+
+    git checkout master
+    git fetch upstream
+    git merge upstream/master master
+    git checkout your-branch
+    git merge master
+    git push --set-upstream origin your-branch
+
+Your commit log may look like this:
 
     d9b90bc Add feature X
     15c925c Apply code review
@@ -14,8 +23,11 @@ merged into a single commit. This can be done using `git rebase`.
 
     git rebase -i HEAD~3
 
-Replace the number 3 with the number of commits you want to squash. After executing this command
-git opens your editor with the following file:
+Replace the number 3 with the number of commits you want to squash. If you don't know how many commits to squash, you can tell git to look at all commits you made on your branch since you branched off of `master`:
+
+    git rebase -i master
+
+After executing either command git opens your editor with the following file:
 
     pick d9b90bc Add feature X
     pick 15c925c Apply code review
