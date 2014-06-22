@@ -3,16 +3,7 @@ The basic steps for creating a pull request are explained in [CONTRIBUTING.md](h
 ## Squashing commits
 
 Sometimes you add further commits to your pull request in order to apply the recommendations of the
-code review. First, you may want to merge from master:
-
-    git checkout master
-    git fetch upstream
-    git merge upstream/master master
-    git checkout your-branch
-    git merge master
-    git push --set-upstream origin your-branch
-
-Your commit log may look like this:
+code review. Your commit log may look like this:
 
     d9b90bc Add feature X
     15c925c Apply code review
@@ -44,7 +35,16 @@ consists of the changes of the three former commits.
 
     e52a32c Add feature X
 
+You may want to merge from master before re-pushing to github:
+
+    git checkout master
+    git fetch upstream
+    git merge upstream/master master
+    git checkout your-branch
+    git merge master
+    git push --set-upstream origin your-branch
+
 Your git graph is now incompatible with the remote on GitHub. Therefore you must use the `force`
 flag for pushing.
 
-    git push --force origin your-branch
+    git push --force -set-upstream origin your-branch
