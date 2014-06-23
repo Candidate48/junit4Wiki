@@ -12,4 +12,4 @@ If you're just wanting to contribute some time, here's some ways to get started:
 
 ## Making Pull Requests
 
-The basic steps for creating a pull request are explained in [CONTRIBUTING.md](https://github.com/junit-team/junit/blob/master/CONTRIBUTING.md). More difficult parts of pull requests are documented at the  pPull Requests](https://github.com/junit-team/junit/wiki/Pull-Requests) wiki page.
+The basic steps for creating a pull request are explained in [CONTRIBUTING.md](https://github.com/junit-team/junit/blob/master/CONTRIBUTING.md). More difficult parts of pull requests are documented at the [Pull Requests](https://github.com/junit-team/junit/wiki/Pull-Requests) wiki page.
