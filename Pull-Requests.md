@@ -47,4 +47,4 @@ You may want to merge from master before re-pushing to github:
 Your git graph is now incompatible with the remote on GitHub. Therefore you must use the `force`
 flag for pushing.
 
-    git push --force -set-upstream origin your-branch
+    git push --force --set-upstream origin your-branch
