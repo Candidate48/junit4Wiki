@@ -40,8 +40,10 @@ You may want to merge from master before re-pushing to github:
     git checkout master
     git fetch upstream
     git merge upstream/master master
+    git push
     git checkout your-branch
     git merge master
+    git rebase -i origin/master
     git push --set-upstream origin your-branch
 
 Your git graph is now incompatible with the remote on GitHub. Therefore you must use the `force`
