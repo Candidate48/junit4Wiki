@@ -14,7 +14,7 @@ merged into a single commit. This can be done using `git rebase`.
 
     git rebase -i HEAD~3
 
-Replace the number 3 with the number of commits you want to squash. If you don't know how many commits to squash, you can tell git to look at all commits you made on your branch since you branched off of `master`:
+Replace the number 3 with the number of commits you want to squash. If you don't know how many commits to squash, **and** you haven't previously merged to your bran h from master, you can tell git to look at all commits you made on your branch since you branched off of `master`:
 
     git rebase -i master
 
