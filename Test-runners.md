@@ -10,7 +10,7 @@ or this from the command line, with both your test class and junit on the classp
 ```java
     java org.junit.runner.JUnitCore TestClass1 [...other test classes...]
 ```
-This usage is documented further here: http://junit.org/apidocs/junit/textui/TestRunner.html
+This usage is documented further here: http://junit.org/javadoc/latest/org/junit/runner/JUnitCore.html
 
 ### Using older runners with Adapter
 `JUnit4Adapter` enables running the new JUnit4 tests using the old JUnit runners. To use it add the following  to a test class:
