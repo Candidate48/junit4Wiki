@@ -17,7 +17,7 @@ If a pull request stays open for a while, often other people submit changes to t
 Sometimes you add further commits to your pull request in order to apply the recommendations of the
 code review.
 
-First, you may want to merge from master (see **Merging from master** abovce).
+First, you may want to merge from master (see **Merging from master** above).
 
 Many people suggest using `git rebase` to squash commits, but it's hard to use correctly and doesn't work well if you have already merged into the branch. Instead, we will create a new branch and reapply the changes there:
 
