@@ -21,6 +21,8 @@ First, you may want to merge from master (see **Merging from master** above).
 
 Many people suggest using `git rebase` to squash commits, but it's hard to use correctly and doesn't work well if you have already merged into the branch. Instead, we will create a new branch and reapply the changes there:
 
+    git checkout your-branch
+    git merge master
     git branch -m your-branch your-branch-orig
     git checkout -b your-branch master
     git read-tree -u -m your-branch-orig
