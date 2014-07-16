@@ -68,5 +68,18 @@ You can use categories with either [maven-surefire-plugin][surefire] (for unit t
 
 Similarly, to exclude a certain list of categories, you would use the `<excludedGroups/>` configuration element.
 
+## Using categories with Gradle
+
+Gradle's test task allows the specification of the JUnit categories you want to include and exclude.
+
+```
+test {
+    useJUnit {
+        includeCategories 'org.gradle.junit.CategoryA'
+        excludeCategories 'org.gradle.junit.CategoryB'
+    }
+}
+```
+
 [surefire]: http://maven.apache.org/surefire/maven-surefire-plugin/examples/junit.html
 [failsafe]: http://maven.apache.org/surefire/maven-failsafe-plugin/examples/junit.html
