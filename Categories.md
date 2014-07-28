@@ -81,5 +81,9 @@ test {
 }
 ```
 
+## Using categories with SBT
+
+SBT's [junit-interface](https://github.com/sbt/junit-interface) allows the specification of JUnit categories via `--include-categories=<CLASSES>` and `--exclude-categories=<CLASSES>`.
+
 [surefire]: http://maven.apache.org/surefire/maven-surefire-plugin/examples/junit.html
 [failsafe]: http://maven.apache.org/surefire/maven-failsafe-plugin/examples/junit.html
