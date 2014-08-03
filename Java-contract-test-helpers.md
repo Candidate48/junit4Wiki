@@ -8,3 +8,5 @@ A project called junit-addons on SourceForge has test superclasses that enable c
 - http://junit-addons.sourceforge.net/junitx/extensions/package-frame.html
 
 Although these test helper classes work without issue, they are designed for pre-generic java, and JUnit 3.x and could be confusing to developers used to JUnit 4.x annotations style of test implementation.
+
+The project [Equals Verifier](https://github.com/jqno/equalsverifier) provides support for testing `equals` and `hashCode`.
