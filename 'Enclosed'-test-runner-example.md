@@ -1,7 +1,7 @@
 # Enclosed TestRunner usage #
 Example of using ``Enclosed`` TestRunner.
 
-We want to test this domain class; testing Equals, HashCode, Serilizable, Comparable, and the Builders.   This can be simply done using the testhelpers from https://github.com/chas66/TestHelpers
+We want to test this domain class; testing Equals, HashCode, Serilizable, Comparable, and the Builders.   This can be simply done using the testhelpers from https://bitbucket.org/chas678/testhelpers
 
 Usually we would need a subclass of each abstract test, however with the `Enclosed` runner, they can all be static inner classes of the same test case class.
 
