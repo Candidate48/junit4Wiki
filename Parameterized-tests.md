@@ -6,8 +6,7 @@ For example, to test a Fibonacci function, write:
 public class FibonacciTest {
     @Parameters
     public static Collection<Object[]> data() {
-        return Arrays.asList(new Object[][] {
-                
+        return Arrays.asList(new Object[][] {     
                  { 0, 0 }, { 1, 1 }, { 2, 1 }, { 3, 2 }, { 4, 3 }, { 5, 5 },{ 6, 8 }  
            });
     }
@@ -40,7 +39,6 @@ public class FibonacciTest {
     @Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
-                
                  { 0, 0 }, { 1, 1 }, { 2, 1 }, { 3, 2 }, { 4, 3 }, { 5, 5 },{ 6, 8 }  
            });
     }
@@ -73,8 +71,9 @@ public class FibonacciTest {
 
     @Parameters(name = "{index}: fib({0})={1}")
     public static Iterable<Object[]> data() {
-        return Arrays.asList(new Object[][] { { 0, 0 }, { 1, 1 }, { 2, 1 },
-                { 3, 2 }, { 4, 3 }, { 5, 5 }, { 6, 8 } });
+        return Arrays.asList(new Object[][] { 
+                 { 0, 0 }, { 1, 1 }, { 2, 1 }, { 3, 2 }, { 4, 3 }, { 5, 5 }, { 6, 8 }
+           });
     }
 
     private int input;
@@ -95,4 +94,4 @@ public class FibonacciTest {
 In the example given above, the Parameterized runner creates names like [1: fib(3)=2]. If you don't specify a name, the current parameter index will be used by default.
 
 ## IDE Bug (Eclipse)
-If using the `(name=` annotation parm and one of the inputs has a rounded bracket, then the name gets truncated.  See https://bugs.eclipse.org/bugs/show_bug.cgi?id=102512
+If using the `name` annotation param and one of the inputs has a rounded bracket, e.g. `@Parameters(name = "test({index})")`, then the name gets truncated in Eclipse versions prior to 4.4 (Luna). See https://bugs.eclipse.org/bugs/show_bug.cgi?id=102512.
