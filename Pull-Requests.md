@@ -24,8 +24,7 @@ Many people suggest using `git rebase` to squash commits, but it's hard to use c
     git checkout your-branch
     git merge master
     git branch -m your-branch your-branch-orig
-    git branch your-branch master
-    git checkout your-branch master
+    git checkout -b your-branch master
     git read-tree -u -m your-branch-orig
     git commit
 
