@@ -51,3 +51,4 @@ When a class is annotated with `@RunWith` or extends a class annotated with `@Ru
 Some popular third party implementations of runners for use with `@RunWith` include:
 - [SpringJUnit4ClassRunner](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.html)
 - [MockitoJUnitRunner](http://docs.mockito.googlecode.com/hg/latest/org/mockito/runners/MockitoJUnitRunner.html)
+- [HierarchicalContextRunner](https://github.com/bechte/junit-hierarchicalcontextrunner/wiki)
