@@ -17,3 +17,5 @@ Some popular third party implementations of runners for use with `@RunWith` incl
  - [IntermittentTestRunner](http://tempusfugitlibrary.org/apidocs/com/google/code/tempusfugit/concurrency/IntermittentTestRunner.html) ([run repeatedly to expose intermittent failures](http://tempusfugitlibrary.org/documentation/junit/intermittent/))
 - [Hierarchical Context Runner](https://github.com/bechte/junit-hierarchicalcontextrunner/wiki) – A runner implementation that supports context hierarchies in JUnit.
 - [junit-dataprovider](https://github.com/TNG/junit-dataprovider/wiki) – A [TestNG](http://testng.org/doc/index.html) like dataprovider (see [here](http://testng.org/doc/documentation-main.html#parameters-dataproviders)) runner for [JUnit](https://github.com/junit-team/junit).
+- JBehave 
+  - [JBehave JUnit runner](https://github.com/codecentric/jbehave-junit-runner)
