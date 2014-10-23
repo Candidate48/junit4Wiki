@@ -1,6 +1,6 @@
-_I hope I don't step on anybodies toes by creating a new page for such an important and large topic, but I do consider it important to get going on this and this page is my attempt to get something moving_
+_I hope I don't step on anybody's toes by creating a new page for such an important and large topic, but I do consider it important to get going on this and this page is my attempt to get something moving_
 
-# What happend so far
+# What has happened so far
 
 Judging from [this and other discussions on the mailing list](https://groups.yahoo.com/neo/groups/junit/conversations/messages/24156) many people seem to be interested in a more flexible way of writing tests in JUnit. One inspiration is [ScalaTest](http://www.scalatest.org/getting_started_with_fun_suite) but other similar approaches exist for various languages, including TestRunners, e.g. https://github.com/stefanbirkner/talkative-junit-tests/blob/master/src/test/java/com/github/stefanbirkner/junit/talkative/ExampleTest.java 
 
@@ -30,7 +30,7 @@ The ultimate test case: Wit parameterized test using the SpringJUnitRunner it sh
 
 * Testnames
 
-* Multiple execution/cascading names. Tools like JBehave make every step in a story a test. This results in the duplicate execution of tests causing problems in some situations (I think Marc can provide mor input for this). Maybe this could be avoided by testnames that include the name of the test suite they are part of?
+* Multiple execution/cascading names. Tools like JBehave make every step in a story a test. This results in the duplicate execution of tests causing problems in some situations (I think Marc can provide more input for this). Maybe this could be avoided by testnames that include the name of the test suite they are part of?
 
 * Global Rules, i.e. Rule-like things that can be added to test without changing the tests.
 
