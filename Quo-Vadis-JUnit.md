@@ -2,7 +2,7 @@ _I hope I don't step on anybodies toes by creating a new page for such an import
 
 # What happend so far
 
-Judging from [this and other discussions on the mailing list](https://groups.yahoo.com/neo/groups/junit/conversations/messages/24156) many people seem to be interested in a more flexible way of writing tests in JUnit. One inspiration is [ScalaTest](http://www.scalatest.org/getting_started_with_fun_suite) but other similar approaches exist for various languages, including TestRunners, e.g. https://github.com/stefanbirkner/talkative-junit-tests/blob/master/src/test/java8/com/github/stefanbirkner/junit/talkative/ExampleTest.java 
+Judging from [this and other discussions on the mailing list](https://groups.yahoo.com/neo/groups/junit/conversations/messages/24156) many people seem to be interested in a more flexible way of writing tests in JUnit. One inspiration is [ScalaTest](http://www.scalatest.org/getting_started_with_fun_suite) but other similar approaches exist for various languages, including TestRunners, e.g. https://github.com/stefanbirkner/talkative-junit-tests/blob/master/src/test/java/com/github/stefanbirkner/junit/talkative/ExampleTest.java 
 
 On the XP-Days Germany in October 2014 a couple of developers, including Marc and Stefan discussed how JUnit might proceed. This is the result of that discussion, intended as a starting point for further discussion and action.
 
