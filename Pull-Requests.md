@@ -19,7 +19,14 @@ code review.
 
 First, you may want to merge from master (see **Merging from master** above).
 
-Many people suggest using `git rebase` to squash commits, but it's hard to use correctly and doesn't work well if you have already merged into the branch. Instead, we will create a new branch and reapply the changes there:
+If you have not merged from master, you can simply use `git rebase` to squash commits
+
+    git checkout your-branch
+    git rebase -i master
+
+See [this blog page](https://ariejan.net/2011/07/05/git-squash-your-latests-commits-into-one/) for more details on how to use `git rebase -i`
+
+If you have merged from master (or you are not sure whether you have merged from master) it is safer to to create a new branch and reapply the changes there:
 
     git checkout your-branch
     git merge master
