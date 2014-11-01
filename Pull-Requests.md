@@ -19,7 +19,7 @@ code review.
 
 First, you may want to merge from master (see **Merging from master** above).
 
-If you have not merged from master, you can simply use `git rebase` to squash commits
+If you have not merged from master, you can simply use `git rebase` to squash commits:
 
     git checkout your-branch
     git rebase -i master
