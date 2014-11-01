@@ -15,9 +15,15 @@ If a pull request stays open for a while, often other people submit changes to t
 ## Squashing commits
 
 Sometimes you add further commits to your pull request in order to apply the recommendations of the
-code review.
+code review. To do this:
 
-First, you may want to merge from master (see **Merging from master** above).
+1 (optional) merge from master (see **Merging from master** above)
+1 squash commits in your local repository
+1 push your changes to your GitHub remote repository
+
+Details of step two and three are below.
+
+### Squashing commits locally
 
 If you **have not merged from master**, you can simply use `git rebase` to squash commits:
 
@@ -37,7 +43,9 @@ If you **have merged from master** (or you are not sure whether you have merged 
 
 Give the commit message a good message for the overall commit.
 
-Your git graph is now incompatible with the remote on GitHub. Therefore you must use the `force`
+### Updating your GitHub remote
+
+After squashing commits in your local repository, your git graph is now incompatible with the remote on GitHub. Therefore you must use the `force`
 flag for pushing.
 
     git push --force --set-upstream origin your-branch
