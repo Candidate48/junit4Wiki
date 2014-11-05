@@ -45,3 +45,5 @@ The ultimate test case: Wit parameterized test using the SpringJUnitRunner it sh
 # Next Steps
 
 I think the next step is to get some discussion going with the aim have a plan of what needs to get done. I think the perfect result would be a common understanding and a bunch of issues that developers could get started on.
+
+After the [initial discussion](https://groups.yahoo.com/neo/groups/junit/conversations/topics/24605) on the JUnit mailing list, the [Testing Java 8](https://groups.google.com/forum/#!forum/testing-java-8) Google Group was created to continue discussing this and related matters.
