@@ -3,7 +3,7 @@ Welcome to the JUnit wiki!
 * [[Getting Started]]
 * Release Notes
   * [[4.13|4.13-release-notes]] - (unreleased)
-  * [4.12](https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.12.md) - (release in progress)
+  * [4.12](https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.12.md) - (released December 4, 2014)
   * [4.11](https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.11.md)
   * [4.10](https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.10.md)
   * [4.9.1](https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.9.1.md)
