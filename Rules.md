@@ -157,7 +157,8 @@ public void verifierRunsAfterTest() {
 - TestWatcher (and the deprecated TestWatchman) are base classes for Rules that take note of the testing action, without modifying it.  For example, this class will keep a log of each passing and failing test:
      
 ```java
-import static org.junit.Assert.fail;  
+import static org.junit.Assert.fail; 
+import org.junit.AssumptionViolatedException; 
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
