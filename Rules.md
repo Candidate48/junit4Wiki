@@ -186,6 +186,11 @@ public class WatchmanTest {
     }
 
     @Override
+    protected void skipped(AssumptionViolatedException e, Description description) {
+      watchedLog += description.getDisplayName() + " " + e.getClass().getSimpleName() + "\n";
+    }
+
+    @Override
     protected void starting(Description description) {
       super.starting(description);
     }
