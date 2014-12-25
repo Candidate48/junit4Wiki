@@ -9,7 +9,7 @@ Download the following JARs and put them on your test classpath:
 
 # Maven
 
-Add a dependency to `junit:junit` in `test` scope.  (Note: 4.12 is the latest stable version as of the latest edit on this page.)
+Add a dependency to `junit:junit` in `test` scope.  (Note: 4.11 is the latest stable version as of the latest edit on this page.)
 
     <dependency>
       <groupId>junit</groupId>
