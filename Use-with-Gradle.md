@@ -12,7 +12,7 @@ dependencies {
 
 See [Gradle Java tests](http://www.gradle.org/docs/current/userguide/java_plugin.html#sec:java_test) for configuration information. In short:
 
-    ./gradlew test
+    ./gradle test
 
 # Using Hamcrest
 
