@@ -49,7 +49,7 @@ public class DigitalAssetManagerTest {
 
 ## TemporaryFolder Rule 
 
-- The TemporaryFolder Rule allows creation of files and folders that are guaranteed to be deleted when the test method finishes (whether it passes or fails):
+- The TemporaryFolder Rule allows creation of files and folders that are deleted when the test method finishes (whether it passes or fails). By default no exception is thrown if resources cannot be deleted:
 
 ```java
 public static class HasTempFolder {
@@ -67,6 +67,13 @@ public static class HasTempFolder {
 
 - `TemporaryFolder#newFolder(String... folderNames)` creates recursively deep temporary folders 
 - `TemporaryFolder#newFile()` creates a randomly named new file, and `#newFolder()` creates a randomly named new folder
+- Starting with version 4.13 `TemporaryFolder` optionally allows strict verification of deleted resources
+which fails the test with `AssertionError` if resources cannot be deleted. This feature can only be opted for by using the `#builder()` method. By default strict verification is disabled which maintains backward compatibility.
+
+```java
+@Rule 
+public TemporaryFolder folder = TemporaryFolder.builder().assureDeletion().build();
+```
 
 ## ExternalResource Rules 
 
