@@ -34,11 +34,12 @@ public class FooTest {
 ```
 
 To run a test on the command line.  Use something like this:
+```
 java -cp .:/usr/share/java/junit.jar org.junit.runner.JUnitCore [test class name]
-
+```
 #### Notes
 
-* All test methods are annotated with @Test. Unlike JUnit3 tests, you do not need to prefix the method name with "test" (and usually don't)
+* All test methods are annotated with `@Test`. Unlike JUnit3 tests, you do not need to prefix the method name with "test" (and usually don't)
 * Do not have your test classes extend `junit.framework.TestCase` (directly or indirectly).
 Usually, tests with JUnit4 do not need to extend anything (which is good, since Java does not support multiple inheritance)
 * Do not use any classes in `junit.framework` or `junit.extensions`
