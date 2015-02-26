@@ -8,7 +8,7 @@ Some popular third party implementations of runners for use with `@RunWith` incl
 - Mockito
  - [MockitoJUnitRunner](http://docs.mockito.googlecode.com/hg/latest/org/mockito/runners/MockitoJUnitRunner.html)
 - JMock  
- - http://jmock.org/javadoc/jmock-2.6.0/doc/org/jmock/integration/junit4/JMock.html
+ - http://jmockit.org/api1x/mockit/integration/junit4/JMockit.html
 - Concordion
  - [ConcordionRunner](https://github.com/concordion/concordion/blob/master/src/main/java/org/concordion/integration/junit4/ConcordionRunner.java)
 - Concurrency / Test Helpers
