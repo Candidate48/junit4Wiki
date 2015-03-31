@@ -98,4 +98,4 @@ Now the test fails and the output is
 
 JUnit tells you which test failed (`evaluatesExpression(CalculatorTest)`) and what went wrong:
 
-    `java.lang.AssertionError: expected:<6> but was:<-6>`.
+    java.lang.AssertionError: expected:<6> but was:<-6>
