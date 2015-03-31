@@ -90,9 +90,11 @@ SBT's [junit-interface](https://github.com/sbt/junit-interface) allows the speci
 
 ## Typical usages for categories
 
-Categories are used to add metadata on the tests. The frequently encountered categories usages are about:
-* The type of automated tests: UnitTests, IntegrationTests, SmokeTests...
-* How quick the tests execute: SlowTests, QuickTests
-* In which part of the build process the tests should be executed: NightlyBuildTests
+Categories are used to add metadata on the tests. 
 
-This is also often used to mark tests with project specific flags.
+The frequently encountered categories usages are about:
+* The type of automated tests: UnitTests, IntegrationTests, SmokeTests, RegressionTests ...
+* How quick the tests execute: SlowTests, QuickTests
+* In which part of the ci build the tests should be executed: NightlyBuildTests
+
+This is also used to add project specific metadata like which feature of a project is covered by the test.
