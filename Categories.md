@@ -93,8 +93,11 @@ SBT's [junit-interface](https://github.com/sbt/junit-interface) allows the speci
 Categories are used to add metadata on the tests. 
 
 The frequently encountered categories usages are about:
-* The type of automated tests: UnitTests, IntegrationTests, SmokeTests, RegressionTests ...
+* The type of automated tests: UnitTests, IntegrationTests, SmokeTests, RegressionTests, PerformanceTests ...
 * How quick the tests execute: SlowTests, QuickTests
 * In which part of the ci build the tests should be executed: NightlyBuildTests
+* The state of the test: UnstableTests, InProgressTests
 
 This is also used to add project specific metadata like which feature of a project is covered by the test.
+
+[See usages of Junit Categories on github hosted projects ](https://github.com/search?o=asc&p=11&q=%22import+org.junit.experimental.categories.Category%22+%22%40Category%22&ref=searchresults&s=indexed&type=Code&utf8=%E2%9C%93)
