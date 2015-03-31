@@ -94,3 +94,5 @@ Categories are used to add metadata on the tests. The frequently encountered cat
 * The type of automated tests: UnitTests, IntegrationTests, SmokeTests...
 * How quick the tests execute: SlowTests, QuickTests
 * In which part of the build process the tests should be executed: NightlyBuildTests
+
+This is also often used to mark tests with project specific flags.
