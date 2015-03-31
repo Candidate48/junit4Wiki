@@ -82,7 +82,7 @@ Run the test again:
 
     java -cp .:junit-4.XX.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest
 
-Now your test fails and the output is
+Now the test fails and the output is
 
     JUnit version 4.12
     .E
@@ -96,6 +96,6 @@ Now your test fails and the output is
     FAILURES!!!
     Tests run: 1,  Failures: 1
 
-JUnit tells you that which test failed (`evaluatesExpression(CalculatorTest)`) and what went wrong:
+JUnit tells you which test failed (`evaluatesExpression(CalculatorTest)`) and what went wrong:
 
     `java.lang.AssertionError: expected:<6> but was:<-6>`.
