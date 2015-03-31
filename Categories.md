@@ -87,3 +87,10 @@ SBT's [junit-interface](https://github.com/sbt/junit-interface) allows the speci
 
 [surefire]: http://maven.apache.org/surefire/maven-surefire-plugin/examples/junit.html
 [failsafe]: http://maven.apache.org/surefire/maven-failsafe-plugin/examples/junit.html
+
+## Typical usages for categories
+
+Categories are used to add metadata on the tests. The frequently encountered categories usages are about:
+* The type of automated tests: UnitTests, IntegrationTests, SmokeTests...
+* How quick the tests execute: SlowTests, QuickTests
+* In which part of the build process the tests should be executed: NightlyBuildTests
