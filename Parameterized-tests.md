@@ -97,4 +97,4 @@ In the example given above, the Parameterized runner creates names like [1: fib(
 If using the `name` annotation param and one of the inputs has a rounded bracket, e.g. `@Parameters(name = "test({index})")`, then the name gets truncated in Eclipse versions prior to 4.4 (Luna). See https://bugs.eclipse.org/bugs/show_bug.cgi?id=102512.
 
 Before the Mars M4 release Eclipse wasn't able to run individual test subtrees, such as the ones create by the Parameterized runner.
-See http://blog.moritz.eysholdt.de/2014/11/new-eclipse-junit-feature-run-subtrees.html and https://bugs.eclipse.org/bugs/show_bug.cgi?id=443498 and 
+See http://blog.moritz.eysholdt.de/2014/11/new-eclipse-junit-feature-run-subtrees.html and https://bugs.eclipse.org/bugs/show_bug.cgi?id=443498.
