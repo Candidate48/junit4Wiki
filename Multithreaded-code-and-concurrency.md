@@ -42,6 +42,7 @@ The `assertConcurrent` method from the article is:
 		}
 ```
 
+A JUnit extension that generalizes this pattern into a library is [ConcurrentUnit](https://github.com/jhalterman/concurrentunit).
 
 Another article giving an overview of alternative stragies at [http://tempusfugitlibrary.org/recipes/2012/05/20/testing-concurrent-code/](http://tempusfugitlibrary.org/recipes/2012/05/20/testing-concurrent-code/) might also be useful.
 
