@@ -4,7 +4,7 @@
 apply plugin: 'java'
 
 dependencies {
-  testCompile group: 'junit', name: 'junit', version: '4.11'
+  testCompile 'junit:junit:4.12'
 }
 ```
 
