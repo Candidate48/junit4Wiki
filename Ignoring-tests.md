@@ -8,6 +8,6 @@ Note that @Ignore takes an optional parameter (a String) if you want to record a
 
     @Ignore("Test is ignored as a demonstration")
     @Test
-    public void testSane() {
+    public void testSame() {
         assertThat(1, is(1));
     }
