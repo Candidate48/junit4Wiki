@@ -27,7 +27,7 @@ The Java compiler creates a file `Calculator.class`.
 
 ## Create a test
 
-Create a the file `CalculatorTest.java` and copy the following code to this file.
+Create the file `CalculatorTest.java` and copy the following code to this file.
 
 ```java
 import static org.junit.Assert.assertEquals;
