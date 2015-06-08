@@ -76,7 +76,7 @@ with
 
 and recompile the class.
 
-    javac Calculator.class
+    javac Calculator.java
 
 Run the test again:
 
