@@ -145,13 +145,14 @@ public static class UsesVerifier {
   public void example() {
     sequence += "test ";
   }
-}
+  
+  @Test
+  public void verifierRunsAfterTest() {
+    sequence = "";
+    assertThat(testResult(UsesVerifier.class), isSuccessful());
+    assertEquals("test verify ", sequence);
+  }
 
-@Test
-public void verifierRunsAfterTest() {
-  sequence = "";
-  assertThat(testResult(UsesVerifier.class), isSuccessful());
-  assertEquals("test verify ", sequence);
 }
 ```
 
