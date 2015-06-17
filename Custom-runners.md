@@ -20,3 +20,5 @@ Some popular third party implementations of runners for use with `@RunWith` incl
 - [junit-dataprovider](https://github.com/TNG/junit-dataprovider/wiki) – A [TestNG](http://testng.org/doc/index.html) like dataprovider (see [here](http://testng.org/doc/documentation-main.html#parameters-dataproviders)) runner for [JUnit](https://github.com/junit-team/junit).
 - JBehave 
   - [JBehave JUnit runner](https://github.com/codecentric/jbehave-junit-runner)
+- FitNesse
+  - [FitNesse Runner](http://fitnesse.org/FitNesse.UserGuide.WritingAcceptanceTests.RunningFromJunit)
