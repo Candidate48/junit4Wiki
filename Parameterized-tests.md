@@ -62,7 +62,7 @@ This currently only works for public fields (see https://github.com/junit-team/j
 In order to easily identify the individual test cases in a Parameterized test, you may provide a name using the @Parameters annotation. This name is allowed to contain placeholders that are replaced at runtime:
 
 - `{index}`: the current parameter index
-- `{0}, {1}, …`: the first, second, and so on, parameter value
+- `{0}, {1}, …`: the first, second, and so on, parameter value. NOTE: single quotes `'` should be escaped as two single quotes `''`.
 
 ## Example
 ```java
