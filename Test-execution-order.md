@@ -9,6 +9,7 @@ From version 4.11, JUnit will by default use a deterministic, but not predictabl
 `@FixMethodOrder(MethodSorters.NAME_ASCENDING)`: Sorts the test methods by method name, in lexicographic order.
 
 #Example
+```java
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestMethodOrder {
 
@@ -25,5 +26,5 @@ public class TestMethodOrder {
         System.out.println("third");
     }
 }
-
+```
 Above code will execute the test methods in the order of their names, sorted in ascending order
