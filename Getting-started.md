@@ -42,17 +42,26 @@ public class CalculatorTest {
   }
 }
 ```
-Compile the test:
+Compile the test. On Linux or MacOS
 
     javac -cp .:junit-4.XX.jar CalculatorTest.java
+
+and on Windows
+
+    javac -cp .;junit-4.XX.jar CalculatorTest.java
+
 
 The Java compiler creates a file `CalculatorTest.class`.
 
 ## Run the test
 
-Run the test from the command line:
+Run the test from the command line. On Linux or MacOS
 
     java -cp .:junit-4.XX.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest
+
+and on Windows
+
+    java -cp .;junit-4.XX.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest
 
 The output is
 
@@ -78,9 +87,13 @@ and recompile the class.
 
     javac Calculator.java
 
-Run the test again:
+Run the test again. On Linux or MacOS
 
     java -cp .:junit-4.XX.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest
+
+and on Windows
+
+    java -cp .;junit-4.XX.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest
 
 Now the test fails and the output is
 
