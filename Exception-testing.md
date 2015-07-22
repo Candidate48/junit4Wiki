@@ -50,5 +50,39 @@ The expectMessage also lets you use Matchers, which gives you a bit more flexibi
 
 `thrown.expectMessage(JUnitMatchers.containsString("Size: 0"));`
 
+Moreover, you can use Matchers to inspect the Exception, useful if it has embedded state you wish to verify.  For example
 
+```
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import javax.ws.rs.NotFoundException;
+import javax.ws.rs.core.Response;
+import static javax.ws.rs.core.Response.Status;
+import static org.hamcrest.CoreMatchers.startsWith;
+import static org.hamcrest.Matchers.hasProperty;
+import static org.hamcrest.Matchers.is;
+
+public class TestExy {
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    @Test
+    public void shouldThrow() {
+        TestThing testThing = new TestThing();
+        thrown.expect(NotFoundException.class);
+        thrown.expectMessage(startsWith("some Message"));
+        thrown.expect(hasProperty("response", hasProperty("status", is(404))));
+        testThing.chuck();
+    }
+
+    private class TestThing {
+        public void chuck() {
+            Response response = Response.status(Status.NOT_FOUND).entity("Resource not found").build();
+            throw new NotFoundException("some Message", response);
+        }
+    }
+}
+
+```
 For an expanded discussion of the `ExpectedException` rule, see this [blog post](http://baddotrobot.com/blog/2012/03/27/expecting-exception-with-junit-rule/index.html).
