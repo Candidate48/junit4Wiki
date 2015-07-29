@@ -52,7 +52,7 @@ The expectMessage also lets you use Matchers, which gives you a bit more flexibi
 
 Moreover, you can use Matchers to inspect the Exception, useful if it has embedded state you wish to verify.  For example
 
-```
+```java
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
