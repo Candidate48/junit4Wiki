@@ -27,7 +27,7 @@ public class FibonacciTest {
 }
 ```
 	 
-Each instance of FibonacciTest will be constructed using the two-argument constructor and the data values in the @Parameters method.
+Each instance of FibonacciTest will be constructed using the two-argument constructor and the data values in the `@Parameters` method.
 
 ## Using @Parameter for Field injection instead of Constructor
 
