@@ -2,14 +2,18 @@
 
 Joe Walnes built a new assertion mechanism on top of what was then JMock 1. The method name was assertThat, and the syntax looked like this:
 
-    assertThat(x, is(3));
-    assertThat(x, is(not(4)));
-    assertThat(responseString, either(containsString("color")).or(containsString("colour")));
-    assertThat(myList, hasItem("3"));
+```java
+assertThat(x, is(3));
+assertThat(x, is(not(4)));
+assertThat(responseString, either(containsString("color")).or(containsString("colour")));
+assertThat(myList, hasItem("3"));
+```
 
 More generally:
 
-    assertThat([value], [matcher statement]);
+```java
+assertThat([value], [matcher statement]);
+```
 
 Advantages of this assertion syntax include:
 
@@ -19,16 +23,18 @@ Combinations: any matcher statement s can be negated (`not(s)`), combined (`eith
 
 Readable failure messages. Compare:
 
-    assertTrue(responseString.contains("color") || responseString.contains("colour"));
-    // ==> failure message: 
-    // java.lang.AssertionError:
+```java
+assertTrue(responseString.contains("color") || responseString.contains("colour"));
+// ==> failure message: 
+// java.lang.AssertionError:
 
 
-    assertThat(responseString, anyOf(containsString("color"), containsString("colour")));
-    // ==> failure message:
-    // java.lang.AssertionError: 
-    // Expected: (a string containing "color" or a string containing "colour")
-    //      got: "Please choose a font"
+assertThat(responseString, anyOf(containsString("color"), containsString("colour")));
+// ==> failure message:
+// java.lang.AssertionError: 
+// Expected: (a string containing "color" or a string containing "colour")
+//      got: "Please choose a font"
+```
 
 Custom Matchers. By implementing the Matcher interface yourself, you can get all of the above benefits for your own custom assertions.
 
@@ -41,11 +47,15 @@ Some notes:
 The old assert methods are never, ever, going away. Developers may continue using the old assertEquals, assertTrue, and so on.
 The second parameter of an assertThat statement is a Matcher. We include the Matchers we want as static imports, like this:
 
-     import static org.hamcrest.CoreMatchers.is;
+```java
+import static org.hamcrest.CoreMatchers.is;
+```
 
 or:
 
-    import static org.hamcrest.CoreMatchers.*;
+```java
+import static org.hamcrest.CoreMatchers.*;
+```
 
 Manually importing Matcher methods can be frustrating. Eclipse 3.3 includes the ability to define "Favorite" classes to import static methods from, which makes it easier (Search for "Favorites" in the Preferences dialog). We expect that support for static imports will improve in all Java IDEs in the future.
 
