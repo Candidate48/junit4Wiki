@@ -5,9 +5,10 @@ To ignore a test in JUnit you can either comment a method, or delete the `@Test`
 
 Note that `@Ignore` takes an optional parameter (a String) if you want to record a reason why a test is being ignored.
 
-
-    @Ignore("Test is ignored as a demonstration")
-    @Test
-    public void testSame() {
-        assertThat(1, is(1));
-    }
+```java
+@Ignore("Test is ignored as a demonstration")
+@Test
+public void testSame() {
+    assertThat(1, is(1));
+}
+```
