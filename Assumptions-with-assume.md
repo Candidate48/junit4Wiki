@@ -19,6 +19,6 @@ It's good to be able to run a test against the code as it is currently written, 
 ```
 The default JUnit runner treats tests with failing assumptions as ignored. Custom runners may behave differently.
 
-We have included assumeTrue for convenience, but thanks to the inclusion of Hamcrest, we do not need to create assumeEquals, assumeSame, and other analogues to the assert* methods. All of those functionalities are subsumed in assumeThat, with the appropriate matcher.
+We have included `assumeTrue` for convenience, but thanks to the inclusion of Hamcrest, we do not need to create `assumeEquals`, `assumeSame`, and other analogues to the `assert*` methods. All of those functionalities are subsumed in `assumeThat`, with the appropriate matcher.
 
 A failing assumption in a `@Before` or `@BeforeClass` method will have the same effect as a failing assumption in each `@Test` method of the class.
