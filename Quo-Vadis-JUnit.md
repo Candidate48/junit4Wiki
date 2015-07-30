@@ -10,15 +10,17 @@ On the XP-Days Germany in October 2014 a couple of developers, including Marc an
 
 If JUnit would provide a method to register tests in form of closures, along with a name, this would allow a much more flexible way of creating, manipulating and executing tests. So maybe at some time in the future a standard JUnit test might look like this:
 
-    public class SomeTest extends JUnitTest {{
-        test ("Test something", () -> {
-                assertEquals(1, 1);
-        });
-
-        test ("Test something else", () -> {
-                assertEquals(2, 2);
-        });
-    }}
+```java
+public class SomeTest extends JUnitTest {{
+    test ("Test something", () -> {
+            assertEquals(1, 1);
+    });
+     
+    test ("Test something else", () -> {
+            assertEquals(2, 2);
+    });
+}}
+```
 
 # Challenge
 
