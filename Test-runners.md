@@ -13,12 +13,14 @@ or this from the command line, with both your test class and junit on the classp
 This usage is documented further here: http://junit.org/javadoc/latest/org/junit/runner/JUnitCore.html
 
 ### Using older runners with Adapter
-`JUnit4Adapter` enables running the new JUnit4 tests using the old JUnit runners. To use it add the following  to a test class:
+`JUnit4TestAdapter` enables running JUnit-4-style tests using a JUnit-3-style test runner. To use it, add the following to a test class:
 ```java
       public static Test suite() {
-        return new JUnit4TestAdapter(AdditionAllTests.class);
+            return new JUnit4TestAdapter('YourJUnit4TestClass'.class);
       }
 ```
+Caveat: See [#1189](https://github.com/junit-team/junit/issues/1189) for issues with including a JUnit-4-style suite that contains a JUnit-3-style suite.
+
 ## @RunWith annotation
 When a class is annotated with `@RunWith` or extends a class annotated with `@RunWith`, JUnit will invoke the class it references to run the tests in that class instead of the runner built into JUnit.
 - JavaDoc for @RunWith http://junit.sourceforge.net/javadoc/org/junit/runner/RunWith.html
