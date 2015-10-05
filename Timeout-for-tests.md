@@ -11,7 +11,7 @@ public void testWithTimeout() {
 ```
 
 ### Timeout Rule (applies to entire test class)
-The Timeout Rule applies the same timeout to all test methods in a class:
+The Timeout Rule applies the same timeout to all test methods in a class, and will [currently](https://github.com/junit-team/junit/issues/1126) take precedence over any timeout parameter on an individual Test annotation.:
 
 ```java
 public class HasGlobalTimeout {
