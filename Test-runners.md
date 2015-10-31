@@ -23,7 +23,7 @@ Caveat: See [#1189](https://github.com/junit-team/junit/issues/1189) for issues 
 
 ## @RunWith annotation
 When a class is annotated with `@RunWith` or extends a class annotated with `@RunWith`, JUnit will invoke the class it references to run the tests in that class instead of the runner built into JUnit.
-- JavaDoc for @RunWith http://junit.sourceforge.net/javadoc/org/junit/runner/RunWith.html
+- JavaDoc for @RunWith http://junit.org/javadoc/latest/org/junit/runner/RunWith.html
 - The default runner is `BlockJUnit4ClassRunner` which supersedes the older `JUnit4ClassRunner`
 - Annotating a class with `@RunWith(JUnit4.class)` will always invoke the default JUnit 4 runner in the current version of JUnit, this class aliases the current default JUnit 4 class runner.
 
@@ -31,12 +31,12 @@ When a class is annotated with `@RunWith` or extends a class annotated with `@Ru
 ### Suite ###
 - `Suite` is a standard runner that allows you to manually build a suite containing tests from many classes.
  - More information at [[Aggregating tests in Suites]] page.
- - http://junit.sourceforge.net/javadoc/org/junit/runners/Suite.html
+ - http://junit.org/javadoc/latest/org/junit/runners/Suite.html
 
 ### Parameterized ###
 - `Parameterized` is a standard runner that implements parameterized tests. When running a parameterized test class, instances are created for the cross-product of the test methods and the test data elements.
  - More information at [[Parameterized Tests]] page.
- - Javadoc: http://junit.sourceforge.net/javadoc/org/junit/runners/Parameterized.html
+ - Javadoc: http://junit.org/javadoc/latest/org/junit/runners/Parameterized.html
 
 ### Categories ###
 - `Categories` is a standard runner enabling subsets of tests tagged with certain categories to execute/be excluded from a  given test run.
@@ -46,7 +46,7 @@ When a class is annotated with `@RunWith` or extends a class annotated with `@Ru
 ### Enclosed ###
 - `Enclosed` - If you put tests in inner classes, Ant, for example, won't find them. By running the outer class with Enclosed, the tests in the inner classes will be run. You might put tests in inner classes to group them for convenience or to share constants.
 - Javadoc: 
- - http://junit-team.github.com/junit/javadoc/4.11/org/junit/experimental/runners/Enclosed.html
+ - http://junit.org/javadoc/latest/org/junit/experimental/runners/Enclosed.html
 - Working Example of use on the [['Enclosed'-test-runner-example]] page
 
 ## Third Party Runners ##
