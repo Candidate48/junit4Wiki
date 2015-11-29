@@ -17,3 +17,7 @@ Add a dependency to `junit:junit` in `test` scope.  (Note: 4.12 is the latest st
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+
+# Gradle
+
+See [Use-with-Gradle]
