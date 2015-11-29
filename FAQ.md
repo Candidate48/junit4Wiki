@@ -224,68 +224,58 @@ Last modified on February 20, 2006
 
 1. **How do I write and run a simple test?**
 
-        Create a class:
+	Create a class:
+
+		package junitfaq;
+
+		import org.junit.*;
+		import static org.junit.Assert.*;
+
+		import java.util.*;
+
+		public class SimpleTest {
+
+	Write a test method (annotated with `@Test`) that asserts expected results on the object under test:
+
+		@Test
+		public void testEmptyCollection() {
+			Collection collection = new ArrayList();
+			assertTrue(collection.isEmpty());
+		}
 
 
-        	      
-          package junitfaq;
-        	      
-          import org.junit.*;
-          import static org.junit.Assert.*;
+	If you are running your JUnit 4 tests with a JUnit 3.x runner, write a suite() method that uses the JUnit4TestAdapter class to create a suite containing all of your test methods:
 
-          import java.util.*;
-          
-          public class SimpleTest {
-        	  
-
-        Write a test method (annotated with @Test) that asserts expected results on the object under test:
+		public static junit.framework.Test suite() {
+			return new junit.framework.JUnit4TestAdapter(SimpleTest.class);
+		}
 
 
+	Although writing a `main()` method to run the test is much less important with the advent of IDE runners, it's still possible:
 
-            @Test
-            public void testEmptyCollection() {
-                Collection collection = new ArrayList();
-                assertTrue(collection.isEmpty());
-            }
-        	  
-
-        If you are running your JUnit 4 tests with a JUnit 3.x runner, write a suite() method that uses the JUnit4TestAdapter class to create a suite containing all of your test methods:
+		public static void main(String args[]) {
+		  org.junit.runner.JUnitCore.main("junitfaq.SimpleTest");
+		}
+	  }
 
 
+	Run the test:
 
-            public static junit.framework.Test suite() {
-                return new junit.framework.JUnit4TestAdapter(SimpleTest.class);
-            }
-        	  
+	To run the test from the console, type:
 
-        Although writing a main() method to run the test is much less important with the advent of IDE runners, it's still possible:
+		java org.junit.runner.JUnitCore junitfaq.SimpleTest
 
+	To run the test with the test runner used in main(), type:
 
+		java junitfaq.SimpleTest
 
-            public static void main(String args[]) {
-              org.junit.runner.JUnitCore.main("junitfaq.SimpleTest");
-            }
-          }
-        	  
+	The passing test results in the following textual output:
 
-        Run the test:
+				.
+		Time: 0
 
-            To run the test from the console, type:
+		OK (1 tests)
 
-                java org.junit.runner.JUnitCore junitfaq.SimpleTest 
-
-            To run the test with the test runner used in main(), type:
-
-                java junitfaq.SimpleTest 
-
-        The passing test results in the following textual output:
-
-
-            		.
-            Time: 0
-
-            OK (1 tests)
-            	    
 
 2. **How do I use a test fixture?**
 
