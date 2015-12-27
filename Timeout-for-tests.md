@@ -18,20 +18,22 @@ The Timeout Rule applies the same timeout to all test methods in a class, and wi
 ```java
 public class HasGlobalTimeout {
     public static String log;
+    private final CountDownLatch latch = new CountDownLatch(1);
 
     @Rule
     public Timeout globalTimeout = Timeout.seconds(10); // 10 seconds max per method tested
 
     @Test
-    public void testInfiniteLoop1() throws Exception {
+    public void testSleepForTooLong() throws Exception {
         log += "ran1";
         Thread.sleep(100_000); // sleep for 100 seconds
     }
 
     @Test
-    public void testInfiniteLoop2() throws Exception {
+    public void testBlockForever() throws Exception {
         log += "ran2";
-        Thread.sleep(100_000); // sleep for 100 seconds
+        latch.await();
+        latch.await(); // will block 
     }
 }
 ```
