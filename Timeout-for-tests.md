@@ -1,4 +1,4 @@
-Tests that 'runaway' or take too long, can be automatically failed.  There are two options for implementing this behaviour:
+Tests that 'runaway' or take too long, can be automatically failed.  There are two options for implementing this behavior:
 
 ### Timeout parameter on @Test Annotation (applies to test method)
 You can optionally specify timeout in milliseconds to cause a test method to fail if it takes longer than that number of milliseconds.  If the time limit is exceeded, then the failure is triggered by an `Exception` being thrown:
@@ -10,10 +10,10 @@ public void testWithTimeout() {
 }
 ```
 
-This is implemented by running the test method in a separate test. If the test runs longer than the allotted timeout, the test will fail and JUnit will interrupt the thread running the test, so if the test is running an interrupt able operation, the thread running the test will exit (if the test is in an infinite loop, the thread running the test will run forever).
+This is implemented by running the test method in a separate thread. If the test runs longer than the allotted timeout, the test will fail and JUnit will interrupt the thread running the test. If a test times out while executing an interruptible operation, the thread running the test will exit (if the test is in an infinite loop, the thread running the test will run forever, while other tests continue to execute).
 
 ### Timeout Rule (applies to all test cases in the test class)
-The Timeout Rule applies the same timeout to all test methods in a class, and will [currently](https://github.com/junit-team/junit/issues/1126) take precedence over any timeout parameter on an individual Test annotation.:
+The Timeout Rule applies the same timeout to all test methods in a class, and will [currently](https://github.com/junit-team/junit/issues/1126) execute in addition to any timeout specified by the `timeout` parameter on an individual Test annotation.:
 
 ```java
 public class HasGlobalTimeout {
