@@ -1,5 +1,7 @@
 # Gradle Dependency
 
+Make sure these lines are in your build.gradle
+
 ```groovy
 apply plugin: 'java'
 
