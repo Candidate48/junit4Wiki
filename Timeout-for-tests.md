@@ -32,7 +32,6 @@ public class HasGlobalTimeout {
     @Test
     public void testBlockForever() throws Exception {
         log += "ran2";
-        latch.await();
         latch.await(); // will block 
     }
 }
