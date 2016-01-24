@@ -7,7 +7,7 @@ new ArrayList<Object>().get(0);
 ```
 This code should throw an IndexOutOfBoundsException. The `@Test` annotation has an optional parameter "`expected`" that takes as values subclasses of `Throwable`. If we wanted to verify that `ArrayList` throws the correct exception, we would write:
 ```java
-@Test(expected= IndexOutOfBoundsException.class) 
+@Test(expected = IndexOutOfBoundsException.class) 
 public void empty() { 
      new ArrayList<Object>().get(0); 
 }
