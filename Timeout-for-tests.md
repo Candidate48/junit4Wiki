@@ -16,6 +16,10 @@ This is implemented by running the test method in a separate thread. If the test
 The Timeout Rule applies the same timeout to all test methods in a class, and will [currently](https://github.com/junit-team/junit/issues/1126) execute in addition to any timeout specified by the `timeout` parameter on an individual Test annotation.:
 
 ```java
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.Timeout;
+
 public class HasGlobalTimeout {
     public static String log;
     private final CountDownLatch latch = new CountDownLatch(1);
