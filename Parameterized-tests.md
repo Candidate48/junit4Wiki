@@ -2,6 +2,17 @@ The custom runner `Parameterized` implements parameterized tests. When running a
 
 For example, to test a Fibonacci function, write:
 ```java
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
 @RunWith(Parameterized.class)
 public class FibonacciTest {
     @Parameters
@@ -25,6 +36,20 @@ public class FibonacciTest {
         assertEquals(fExpected, Fibonacci.compute(fInput));
     }
 }
+
+public class Fibonacci {
+    public static int compute(int n) {
+    	int result = 0;
+    	
+        if (n <= 1) { 
+        	result = n; 
+        } else { 
+        	result = compute(n - 1) + compute(n - 2); 
+        }
+        
+        return result;
+    }
+}
 ```
 	 
 Each instance of FibonacciTest will be constructed using the two-argument constructor and the data values in the `@Parameters` method.
@@ -34,6 +59,17 @@ Each instance of FibonacciTest will be constructed using the two-argument constr
 It is also possible to inject data values directly into fields without needing a constructor using the @Parameter annotation, like so:
 
 ```java
+import static org.junit.Assert.assertEquals;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameter;
+import org.junit.runners.Parameterized.Parameters;
+
 @RunWith(Parameterized.class)
 public class FibonacciTest {
     @Parameters
@@ -54,6 +90,10 @@ public class FibonacciTest {
         assertEquals(fExpected, Fibonacci.compute(fInput));
     }
 }
+
+public class Fibonacci {
+    ...
+}
 ```
 
 This currently only works for public fields (see https://github.com/junit-team/junit/pull/737).
@@ -66,6 +106,15 @@ In order to easily identify the individual test cases in a Parameterized test, y
 
 ## Example
 ```java
+import static org.junit.Assert.assertEquals;
+
+import java.util.Arrays;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
 @RunWith(Parameterized.class)
 public class FibonacciTest {
 
@@ -88,6 +137,10 @@ public class FibonacciTest {
     public void test() {
         assertEquals(expected, Fibonacci.compute(input));
     }
+}
+
+public class Fibonacci {
+    ...
 }
 ```
 
