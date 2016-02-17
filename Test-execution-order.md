@@ -10,6 +10,10 @@ From version 4.11, JUnit will by default use a deterministic, but not predictabl
 
 ##Example
 ```java
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestMethodOrder {
 
