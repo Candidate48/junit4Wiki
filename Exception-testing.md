@@ -53,9 +53,9 @@ The expectMessage also lets you use Matchers, which gives you a bit more flexibi
 Moreover, you can use Matchers to inspect the Exception, useful if it has embedded state you wish to verify.  For example
 
 ```java
-import static org.hamcrest.Matchers.startsWith;
 import static org.hamcrest.Matchers.hasProperty;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.startsWith;
 
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.core.Response;
