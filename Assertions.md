@@ -77,7 +77,7 @@ public class AssertTests {
   }
 
   @Test
-  public void testAssertThathasItemsContainsString() {
+  public void testAssertThatHasItems() {
     assertThat(Arrays.asList("one", "two", "three"), hasItems("one", "three"));
   }
 
