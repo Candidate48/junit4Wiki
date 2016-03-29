@@ -112,7 +112,7 @@ public static class UsesExternalResource {
 ```java
 public static class UsesErrorCollectorTwice {
   @Rule
-  public ErrorCollector collector= new ErrorCollector();
+  public ErrorCollector collector = new ErrorCollector();
   
   @Test
   public void example() {
@@ -253,13 +253,13 @@ public static class HasGlobalTimeout {
   
   @Test
   public void testInfiniteLoop1() {
-    log+= "ran1";
+    log += "ran1";
     for(;;) {}
   }
   
   @Test
   public void testInfiniteLoop2() {
-    log+= "ran2";
+    log += "ran2";
     for(;;) {}
   }
 }
@@ -273,7 +273,7 @@ public static class HasGlobalTimeout {
 ```java
 public static class HasExpectedException {
   @Rule
-  public ExpectedException thrown= ExpectedException.none();
+  public ExpectedException thrown = ExpectedException.none();
 
   @Test
   public void throwsNothing() {
@@ -310,10 +310,10 @@ all the test classes run, and disconnects after they are finished:
 @RunWith(Suite.class)
 @SuiteClasses({A.class, B.class, C.class})
 public class UsesExternalResource {
-  public static Server myServer= new Server();
+  public static Server myServer = new Server();
 
   @ClassRule
-  public static ExternalResource resource= new ExternalResource() {
+  public static ExternalResource resource = new ExternalResource() {
     @Override
     protected void before() throws Throwable {
       myServer.connect();
@@ -334,7 +334,7 @@ The RuleChain rule allows ordering of TestRules:
 ```java
 public static class UseRuleChain {
     @Rule
-    public TestRule chain= RuleChain
+    public TestRule chain = RuleChain
                            .outerRule(new LoggingRule("outer rule"))
                            .around(new LoggingRule("middle rule"))
                            .around(new LoggingRule("inner rule"));
