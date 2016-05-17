@@ -7,7 +7,7 @@ Some popular third party implementations of runners for use with `@RunWith` incl
  - [SpringJUnit4ClassRunner](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.html) Javadoc API
 - Mockito
  - [MockitoJUnitRunner](http://docs.mockito.googlecode.com/hg/latest/org/mockito/runners/MockitoJUnitRunner.html)
-- JMock  
+- JMockit  
  - http://jmockit.org/api1x/mockit/integration/junit4/JMockit.html
 - Concordion
  - [ConcordionRunner](https://github.com/concordion/concordion/blob/master/src/main/java/org/concordion/integration/junit4/ConcordionRunner.java)
