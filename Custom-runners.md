@@ -23,3 +23,4 @@ Some popular third party implementations of runners for use with `@RunWith` incl
 - FitNesse
   - [FitNesse Runner](http://fitnesse.org/FitNesse.UserGuide.WritingAcceptanceTests.RunningFromJunit)
 - [JICUnit](https://github.com/Lucas3oo/jicunit) - A JUnit runner in the JEE container for in-container testing similar to JUnitEE and Jakarta Cactus, both which are not developed any more.
+- [Junit Browser Runner](https://github.com/dukescript/junit-browser-runner) - A JUnit runner that executes your tests in a Browser using [bck2brwsr](http://wiki.apidesign.org/wiki/Bck2Brwsr).
