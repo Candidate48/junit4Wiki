@@ -36,7 +36,9 @@ public class FibonacciTest {
         assertEquals(fExpected, Fibonacci.compute(fInput));
     }
 }
+```
 
+```java
 public class Fibonacci {
     public static int compute(int n) {
     	int result = 0;
@@ -98,7 +100,28 @@ public class Fibonacci {
 
 This currently only works for public fields (see https://github.com/junit-team/junit/pull/737).
 
+## Tests with single parameter
+
+If your test needs a single parameter only, you don't have to wrap it with an array. Instead you can provide an Iterable or an array of objects.
+
+```java
+@Parameters
+public static Iterable<? extends Object> data() {
+    return Arrays.asList("first test", "second test");
+}
+```
+
+or
+
+```java
+@Parameters
+public static Object[] data() {
+    return new Object[] { "first test", "second test" };
+}
+```
+
 ## Identify Individual test cases
+
 In order to easily identify the individual test cases in a Parameterized test, you may provide a name using the @Parameters annotation. This name is allowed to contain placeholders that are replaced at runtime:
 
 - `{index}`: the current parameter index
