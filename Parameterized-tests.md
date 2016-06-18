@@ -102,6 +102,8 @@ This currently only works for public fields (see https://github.com/junit-team/j
 
 ## Tests with single parameter
 
+(Since 4.12-beta-3)
+
 If your test needs a single parameter only, you don't have to wrap it with an array. Instead you can provide an Iterable or an array of objects.
 
 ```java
