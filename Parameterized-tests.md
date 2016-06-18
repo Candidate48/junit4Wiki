@@ -176,3 +176,7 @@ If using the `name` annotation param and one of the inputs has a rounded bracket
 
 Before the Mars M4 release Eclipse wasn't able to run individual test subtrees, such as the ones create by the Parameterized runner.
 See http://blog.moritz.eysholdt.de/2014/11/new-eclipse-junit-feature-run-subtrees.html and https://bugs.eclipse.org/bugs/show_bug.cgi?id=443498.
+
+## See also
+
+As an alternative to `Parameterized tests` you can also use the plugin https://github.com/Pragmatists/JUnitParams
