@@ -398,11 +398,7 @@ public class TestLogger implements TestRule {
       @Override
       public void evaluate() throws Throwable {
         logger = Logger.getLogger(description.getTestClass().getName() + '.' + description.getDisplayName());
-        try {
-          base.evaluate();
-        } finally {
-          logger = null;
-        }
+        base.evaluate();
       }
     };
   }
