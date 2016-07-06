@@ -26,7 +26,7 @@ public class FibonacciTest {
 
     private int fExpected;
 
-    public FibonacciTest(int input, int expected) {
+    public void FibonacciTest(int input, int expected) {
         fInput= input;
         fExpected= expected;
     }
