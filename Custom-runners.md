@@ -13,9 +13,10 @@ Some popular third party implementations of runners for use with `@RunWith` incl
  - [ConcordionRunner](https://github.com/concordion/concordion/blob/master/src/main/java/org/concordion/integration/junit4/ConcordionRunner.java)
 - [Cucumber Runner](https://github.com/cucumber/cucumber-jvm/blob/master/junit/src/main/java/cucumber/api/junit/Cucumber.java)
 - Concurrency / Test Helpers
- - [ConcurrentTestRunner](http://tempusfugitlibrary.org/apidocs/com/google/code/tempusfugit/concurrency/ConcurrentTestRunner.html) (Run tests [in parallel](http://tempusfugitlibrary.org/documentation/junit/parallel/))
+ - [Parallel Test Runner](https://github.com/diva-e/parallel-test-runner)
+ - [ConcurrentTestRunner](http://tempusfugitlibrary.org/apidocs/com/google/code/tempusfugit/concurrency
+/ConcurrentTestRunner.html) (Run tests [in parallel](http://tempusfugitlibrary.org/documentation/junit/parallel/))
  - [JUnit Toolbox](https://code.google.com/p/junit-toolbox/) (Run tests in parallel; also Suite and Categories with Patterns, async)
-- [Parallel Test Runner](https://github.com/diva-e/parallel-test-runner)
  - [IntermittentTestRunner](http://tempusfugitlibrary.org/apidocs/com/google/code/tempusfugit/concurrency/IntermittentTestRunner.html) ([run repeatedly to expose intermittent failures](http://tempusfugitlibrary.org/documentation/junit/intermittent/))
 - [Hierarchical Context Runner](https://github.com/bechte/junit-hierarchicalcontextrunner/wiki) – A runner implementation that supports context hierarchies in JUnit.
 - [junit-dataprovider](https://github.com/TNG/junit-dataprovider/wiki) – A [TestNG](http://testng.org/doc/index.html) like dataprovider (see [here](http://testng.org/doc/documentation-main.html#parameters-dataproviders)) runner for [JUnit](https://github.com/junit-team/junit).
