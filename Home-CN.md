@@ -15,7 +15,7 @@
 * [Latest JUnit API JavaDocs](http://junit.org/javadoc/latest/)
 
 ##  JUnit Usage and Idioms
-* [[Assertions]] - your bread and butter for unit testing
+* [[Assertions CN]] - 单元测试的必要语句
 * [[Test Runners]] - how tests should be executed
 * [[Aggregating tests in Suites]] - how to combine multiple related tests into a test suite
 * [[Test Execution Order]] - specifying what order to run unit tests
