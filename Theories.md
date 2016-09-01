@@ -15,7 +15,7 @@ public class UserTest {
 }
 ```
 
-This makes it clear that the user's filename should be included in the config file name, only if it doesn't contain a slash. Another test or theory might define what happens when a username does contain a slash.
+This makes it clear that the user's username should be included in the config file name, only if it doesn't contain a slash. Another test or theory might define what happens when a username does contain a slash.
 
 UserTest will attempt to run filenameIncludesUsername on every compatible DataPoint defined in the class. If any of the assumptions fail, the data point is silently ignored. If all of the assumptions pass, but an assertion fails, the test fails.
 
