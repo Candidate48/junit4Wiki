@@ -1,5 +1,5 @@
 This small example shows you how to write a unit test. You need to have a JDK installed and a text editor. (In general it is recommended to use a build tool for building your software and running the tests.)
-jiashen
+
 ## Preparation
 
 Create a new folder `junit-example` and download the current `junit-4.XX.jar` from JUnit's [release page](https://github.com/junit-team/junit/releases) and [Hamcrest](http://search.maven.org/remotecontent?filepath=org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar) to this folder. Change to the folder `junit-example`. All files are created within this folder and all commands are executed there, too.
