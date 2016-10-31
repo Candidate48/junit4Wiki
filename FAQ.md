@@ -913,13 +913,8 @@ Last modified on February 20, 2006
 
 10. **How do I organize all test classes in a TestSuite automatically and not use or manage a TestSuite explicitly?**
 
-    (Submitted by: Bill de hora)
-
-    There are a number of ways to do this:
-
-        In Ant, use the junit task and the batchtest element:
-
-
+    There are a number of ways to do this. In Ant, use the junit task and the batchtest element:
+    
         <junit printsummary="yes" haltonfailure="yes">
           ...
           <batchtest fork="yes">
@@ -929,26 +924,24 @@ Last modified on February 20, 2006
             </fileset>
           </batchtest>
         </junit> 
-        	  
 
-        Idiomatic naming patterns for unit tests are Test*.java and *Test.java. Documentation and examples are at http://ant.apache.org/manual/OptionalTasks/junit.html.
+    Idiomatic naming patterns for unit tests are `Test*.java` and `*Test.java`. Documentation and examples are at http://ant.apache.org/manual/Tasks/junit.html.
 
-        Use the DirectorySuiteBuilder and ArchiveSuiteBuilder (for jar/zip files) classes provided by JUnit-addons project:
+    Use the DirectorySuiteBuilder and ArchiveSuiteBuilder (for jar/zip files) classes provided by JUnit-addons project:
 
             DirectorySuiteBuilder builder = new DirectorySuiteBuilder();
             builder.setSuffix("Test");
             Test suite = builer.suite("/home/project/myproject/tests"); 
-            	  
 
-        Documentation and examples are at http://junit-addons.sourceforge.net.
+    Documentation and examples are at http://junit-addons.sourceforge.net.
 
-        Write your own custom suite builder.
+    Write your own custom suite builder.
 
-        Have your test classes implement an interface and write a treewalker to load each class in a directory, inspect the class, and add any classes that implement the interface to a TestSuite.
+    Have your test classes implement an interface and write a treewalker to load each class in a directory, inspect the class, and add any classes that implement the interface to a TestSuite.
 
-        You might only want to do this if you are very uncomfortable with using a naming convention for test classes. Aside from being slow for larger suites, ultimately it's arguable whether it's more effort to follow a naming convention that have test classes implement an interface!
+    You might only want to do this if you are very uncomfortable with using a naming convention for test classes. Aside from being slow for larger suites, ultimately it's arguable whether it's more effort to follow a naming convention that have test classes implement an interface!
 
-        An example of this approach is at http://www.javaworld.com/javaworld/jw-12-2000/jw-1221-junit_p.html.
+    An example of this approach is at http://www.javaworld.com/javaworld/jw-12-2000/jw-1221-junit_p.html.
 
 ###Best Practices
 
