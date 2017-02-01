@@ -249,7 +249,7 @@ public static class HasGlobalTimeout {
   public static String log;
   
   @Rule
-  public TestRule globalTimeout = new Timeout(20);
+  public final TestRule globalTimeout = Timeout.millis(20);
   
   @Test
   public void testInfiniteLoop1() {
