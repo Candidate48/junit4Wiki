@@ -11,10 +11,10 @@ For an example of a rule usage, there follows a test using the TemporaryFolder a
 ```java
 public class DigitalAssetManagerTest {
   @Rule
-  public TemporaryFolder tempFolder = new TemporaryFolder();
+  public final TemporaryFolder tempFolder = new TemporaryFolder();
 
   @Rule
-  public ExpectedException exception = ExpectedException.none();
+  public final ExpectedException exception = ExpectedException.none();
 
   @Test
   public void countsAssets() throws IOException {
@@ -52,7 +52,7 @@ public class DigitalAssetManagerTest {
 ```java
 public static class HasTempFolder {
   @Rule
-  public TemporaryFolder folder = new TemporaryFolder();
+  public final TemporaryFolder folder = new TemporaryFolder();
 
   @Test
   public void testUsingTempFolder() throws IOException {
@@ -84,7 +84,7 @@ public static class UsesExternalResource {
   Server myServer = new Server();
   
   @Rule
-  public ExternalResource resource = new ExternalResource() {
+  public final ExternalResource resource = new ExternalResource() {
     @Override
     protected void before() throws Throwable {
       myServer.connect();
@@ -112,7 +112,7 @@ public static class UsesExternalResource {
 ```java
 public static class UsesErrorCollectorTwice {
   @Rule
-  public ErrorCollector collector = new ErrorCollector();
+  public final ErrorCollector collector = new ErrorCollector();
   
   @Test
   public void example() {
@@ -132,7 +132,7 @@ private static String sequence;
 
 public static class UsesVerifier {
   @Rule
-  public Verifier collector = new Verifier() {
+  public final Verifier collector = new Verifier() {
     @Override
     protected void verify() {
       sequence += "verify ";
@@ -176,7 +176,7 @@ public class WatchmanTest {
   private static String watchedLog;
 
   @Rule
-  public TestRule watchman = new TestWatcher() {
+  public final TestRule watchman = new TestWatcher() {
     @Override
     public Statement apply(Statement base, Description description) {
       return super.apply(base, description);
@@ -226,7 +226,7 @@ public class WatchmanTest {
 ```java
 public class NameRuleTest {
   @Rule
-  public TestName name = new TestName();
+  public final TestName name = new TestName();
   
   @Test
   public void testA() {
@@ -273,7 +273,7 @@ public static class HasGlobalTimeout {
 ```java
 public static class HasExpectedException {
   @Rule
-  public ExpectedException thrown = ExpectedException.none();
+  public final ExpectedException thrown = ExpectedException.none();
 
   @Test
   public void throwsNothing() {
@@ -310,10 +310,10 @@ all the test classes run, and disconnects after they are finished:
 @RunWith(Suite.class)
 @SuiteClasses({A.class, B.class, C.class})
 public class UsesExternalResource {
-  public static Server myServer = new Server();
+  public static final Server myServer = new Server();
 
   @ClassRule
-  public static ExternalResource resource = new ExternalResource() {
+  public static final ExternalResource resource = new ExternalResource() {
     @Override
     protected void before() throws Throwable {
       myServer.connect();
@@ -334,7 +334,7 @@ The RuleChain rule allows ordering of TestRules:
 ```java
 public static class UseRuleChain {
     @Rule
-    public TestRule chain = RuleChain
+    public final TestRule chain = RuleChain
                            .outerRule(new LoggingRule("outer rule"))
                            .around(new LoggingRule("middle rule"))
                            .around(new LoggingRule("inner rule"));
@@ -417,7 +417,7 @@ import org.junit.Test;
 public class MyLoggerTest {
 
   @Rule
-  public TestLogger logger = new TestLogger();
+  public final TestLogger logger = new TestLogger();
 
   @Test
   public void checkOutMyLogger() {
