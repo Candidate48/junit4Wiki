@@ -84,7 +84,7 @@ public class FibonacciTest {
     @Parameter // first data value (0) is default
     public /* NOT private */ int fInput;
 
-    @Parameter(value = 1)
+    @Parameter(1)
     public /* NOT private */ int fExpected;
 
     @Test
