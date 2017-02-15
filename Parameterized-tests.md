@@ -178,5 +178,5 @@ Before the Mars M4 release Eclipse wasn't able to run individual test subtrees, 
 See http://blog.moritz.eysholdt.de/2014/11/new-eclipse-junit-feature-run-subtrees.html and https://bugs.eclipse.org/bugs/show_bug.cgi?id=443498.
 
 ## See also
-
-As an alternative to parameterized tests you can also use the plugin [JUnitParams](https://github.com/Pragmatists/JUnitParams)
+* As an alternative to parameterized tests you can also use the plugin [JUnitParams](https://github.com/Pragmatists/JUnitParams)
+* If you want to define the parameters for your tests at the tests' `Suite`, you can use the `ParameterizedSuite` runner that is available in [a separate library](https://github.com/PeterWippermann/parameterized-suite).
