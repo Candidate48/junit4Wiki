@@ -179,4 +179,4 @@ See http://blog.moritz.eysholdt.de/2014/11/new-eclipse-junit-feature-run-subtree
 
 ## See also
 
-As an alternative to `Parameterized tests` you can also use the plugin https://github.com/Pragmatists/JUnitParams
+As an alternative to parameterized tests you can also use the plugin [JUnitParams](https://github.com/Pragmatists/JUnitParams)
