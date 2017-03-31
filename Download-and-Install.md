@@ -1,6 +1,6 @@
 To download and install JUnit you currently have the following options.
  
-# Plain-old JAR
+# Plain-old JA
 
 Download the following JARs put them on your test classpath:
 
@@ -10,6 +10,10 @@ Download the following JARs put them on your test classpath:
 # Maven
 
 Add a dependency to `junit:junit` in `test` scope.  (Note: 4.12 is the latest stable version as of the latest edit on this page.)
+
+
+
+
 
     <dependency>
       <groupId>junit</groupId>
