@@ -1,6 +1,6 @@
 To download and install JUnit you currently have the following options.
  
-# Plain-old JA
+# Plain-old JAR
 
 Download the following JARs put them on your test classpath:
 
