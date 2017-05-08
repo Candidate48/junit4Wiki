@@ -4,7 +4,7 @@ Edited by [Mike Clark](mailto:mike@clarkware.com) (http://clarkware.com)
 
 Last modified on February 20, 2006
 
-###Table of Contents
+### Table of Contents
 
 1. FAQ Info
  1. Who is responsible for this FAQ?
@@ -76,7 +76,7 @@ Last modified on February 20, 2006
  2. How do I launch a debugger when a test fails?
  3. Where can I find unit testing frameworks similar to JUnit for other languages?
 
-###FAQ Info
+### FAQ Info
 1. **Who is responsible for this FAQ?**
 
     The current version of this FAQ is maintained by [Mike Clark](mailto:mike@clarkware.com).
@@ -99,7 +99,7 @@ Last modified on February 20, 2006
 
     The JUnit distribution also includes this FAQ in the doc directory.
 
-###Overview
+### Overview
 
 1. **What is JUnit?**
 
@@ -151,7 +151,7 @@ Last modified on February 20, 2006
 * [2001 JavaWorld Editors' Choice Awards (ECA)](http://www.javaworld.com/javaworld/jw-06-2001/j1-01-awards.html)  
         Best Java Performance Monitoring/Testing Tool
 
-###Getting Started
+### Getting Started
 
 1. **Where do I download JUnit?**
 
@@ -220,7 +220,7 @@ Last modified on February 20, 2006
 
     JUnit is hosted on SourceForge. Please use the tools provided by SourceForge for your submissions.
 
-###Writing Tests
+### Writing Tests
 
 1. **How do I write and run a simple test?**
 
@@ -621,7 +621,7 @@ Last modified on February 20, 2006
 
     Therefore, if you allocate external or limited resources in a test, you are responsible for freeing those resources. Explicitly setting an object to null in the tearDown() method, for example, allows it to be garbage collected before the end of the entire test run.
 
-###Organizing Tests
+### Organizing Tests
 
 1. **Where should I put my test files?**
 
@@ -724,7 +724,7 @@ Last modified on February 20, 2006
         oneTimeTearDown()
         	
 
-###Running Tests
+### Running Tests
 
 1. **What CLASSPATH settings are needed to run JUnit?**
 
@@ -943,7 +943,7 @@ Last modified on February 20, 2006
 
     An example of this approach is at http://www.javaworld.com/javaworld/jw-12-2000/jw-1221-junit_p.html.
 
-###Best Practices
+### Best Practices
 
 1. **When should tests be written?**
 
@@ -1032,7 +1032,7 @@ Last modified on February 20, 2006
 
     It generally takes less time to codify expectations in the form of an automated JUnit test that retains its value over time. If it's difficult to write a test to assert expected values, the tests may be telling you that shorter and more cohesive methods would improve your design.
 
-###Miscellaneous
+### Miscellaneous
 
 1. **How do I integrate JUnit with my IDE?**
 
