@@ -59,5 +59,5 @@ The following one-liner described [here](http://stackoverflow.com/questions/5094
 Reports on the test times, slowest sorted to the top:
 
 ```bash
-$ grep -h "<testcase" `find . -iname "TEST-*.xml"` | sed 's/<testcase time="\(.*\)" classname="\(.*\)" name="\(.*\)".*/\1\t\2.\3/' | sort -rn | head
+$ grep -h "<testcase" `find . -iname "TEST-*.xml"` | sed 's/<testcase name="\(.*\)" classname="\(.*\)" time="\(.*\)".*/\3\t\2.\1/' | sort -rn | head
 ```
