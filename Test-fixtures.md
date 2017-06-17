@@ -83,7 +83,7 @@ public class TestFixturesExample {
 
 Will Output something like the following:
 
-```java
+```text
 @BeforeClass setUpClass
 @Before setUp
 @Test test2()
