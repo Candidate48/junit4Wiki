@@ -88,7 +88,7 @@ SBT's [junit-interface](https://github.com/sbt/junit-interface) allows the speci
 [surefire]: http://maven.apache.org/surefire/maven-surefire-plugin/examples/junit.html
 [failsafe]: http://maven.apache.org/surefire/maven-failsafe-plugin/examples/junit.html
 
-## Typical usages for categories
+## Typical usages for categories
 
 Categories are used to add metadata on the tests. 
 
