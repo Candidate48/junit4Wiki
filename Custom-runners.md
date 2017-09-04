@@ -9,8 +9,6 @@ Some popular third party implementations of runners for use with `@RunWith` incl
   - [MockitoJUnitRunner](http://docs.mockito.googlecode.com/hg/latest/org/mockito/runners/MockitoJUnitRunner.html)
 - JMockit  
   - http://jmockit.org/api1x/mockit/integration/junit4/JMockit.html
-- Concordion
-  - [ConcordionRunner](https://github.com/concordion/concordion/blob/master/src/main/java/org/concordion/integration/junit4/ConcordionRunner.java)
 - Concurrency / Test Helpers
   - [Parallel Test Runner](https://github.com/diva-e/parallel-test-runner)
   - [ConcurrentTestRunner](http://tempusfugitlibrary.org/apidocs/com/google/code/tempusfugit/concurrency/ConcurrentTestRunner.html) (Run tests [in parallel](http://tempusfugitlibrary.org/documentation/junit/parallel/))
@@ -19,9 +17,10 @@ Some popular third party implementations of runners for use with `@RunWith` incl
 - [Hierarchical Context Runner](https://github.com/bechte/junit-hierarchicalcontextrunner/wiki) – A runner implementation that supports context hierarchies in JUnit.
 - [junit-dataprovider](https://github.com/TNG/junit-dataprovider/wiki) – A [TestNG](http://testng.org/doc/index.html) like dataprovider (see [here](http://testng.org/doc/documentation-main.html#parameters-dataproviders)) runner for [JUnit](https://github.com/junit-team/junit).
 - BDD testing - these integrate popular BDD/ATDD methodologies
-  - [Cucumber Runner](https://github.com/cucumber/cucumber-jvm/blob/master/junit/src/main/java/cucumber/api/junit/Cucumber.java) - Cucumber JVM integration for JUnit
-  - JBehave - [JBehave JUnit runner](https://github.com/codecentric/jbehave-junit-runner)
+  - [Cucumber Runner](https://github.com/cucumber/cucumber-jvm/blob/master/junit/src/main/java/cucumber/api/junit/Cucumber.java) - Cucumber JVM integration for JUnit, based on Gherkin specifications written in feature files
+  - JBehave - [JBehave JUnit runner](https://github.com/codecentric/jbehave-junit-runner) - a Gherkin-based specification framework
   - FitNesse - [FitNesse Runner](http://fitnesse.org/FitNesse.UserGuide.WritingAcceptanceTests.RunningFromJunit)
+  - [ConcordionRunner](https://github.com/concordion/concordion/blob/master/src/main/java/org/concordion/integration/junit4/ConcordionRunner.java) - the Concordion BDD framework based on Gherkin specifications written in markdown
   - [Spectrum](https://github.com/greghaskins/spectrum) - supports Specs in Jasmine/Mocha/Gherkin syntax (Java 8 required)
   - [Oleaster](https://github.com/mscharhag/oleaster) - supports Specs in Jasmine/Mocha syntax
   - [Ginkgo4jRunner](https://github.com/paulcwarren/ginkgo4j) - supports Specs in Jasmine/Mocha syntax
