@@ -1,5 +1,5 @@
 ### IDE support - graphical runners
-NetBeans, Eclipse and IntelliJ Idea have native graphical test runners built in.
+NetBeans, Eclipse, and IntelliJ Idea have native graphical test runners built in.
 
 ### Console based Test runner
 JUnit provides tools to define the suite to be run and to display its results. To run tests and see the results on the console, run this from a Java program:
