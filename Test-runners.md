@@ -43,7 +43,7 @@ You can specify groups of tests to be excluded or included by using the `Categor
 
     java org.junit.runner.JUnitCore --filter=org.junit.experimental.categories.IncludeCategories=MyCat1,MyCat2 --filter=org.junit.experimental.categories.ExcludeCategories=MyCat3,MyCat4
 
-You may filter tests according to any instance of FilterFactory. The `--filter` option takes the general form:
+You may filter tests according to any instance of `FilterFactory`. The `--filter` option takes the general form:
    
     java [Runner] --filter=[FilterFactory]=[Categories,]
 
