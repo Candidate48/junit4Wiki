@@ -39,6 +39,14 @@ When a class is annotated with `@RunWith` or extends a class annotated with `@Ru
  - Javadoc: http://junit.org/javadoc/latest/org/junit/runners/Parameterized.html
 
 ### Categories ###
+You can specify groups of tests to be excluded or included by using the `Categories` runner. Once you have annotated certain methods with `@Category(MyCategory.class)`, you can use the `--filter` option to restrict which tests will be run:
+
+    java org.junit.runner.JUnitCore --filter=org.junit.experimental.categories.IncludeCategories=MyCat1,MyCat2 --filter=org.junit.experimental.categories.ExcludeCategories=MyCat3,MyCat4
+
+You may filter tests according to any instance of FilterFactory. The `--filter` options takes the general form:
+   
+    java [Runner] --filter=[FilterFactory]=[Categories,]
+
 - `Categories` is a standard runner enabling subsets of tests tagged with certain categories to execute/be excluded from a  given test run.
  - More information at [[Categories]] page.
 
