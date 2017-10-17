@@ -81,4 +81,4 @@ Useful Hamcrest CoreMatchers are included in the JUnit distribution
 Other, potentially Matchers out there include
 - [Excel spreadsheet matchers](https://github.com/tobyweston/simple-excel)
 - [JSON matchers](https://github.com/hertzsprung/hamcrest-json)
-- [XML/XPath matchers](https://code.google.com/p/xml-matchers/)
+- [XML/XPath matchers](https://github.com/davidehringer/xml-matchers)
