@@ -16,6 +16,7 @@ Some popular third party implementations of runners for use with `@RunWith` incl
   - [IntermittentTestRunner](http://tempusfugitlibrary.org/apidocs/com/google/code/tempusfugit/concurrency/IntermittentTestRunner.html) ([run repeatedly to expose intermittent failures](http://tempusfugitlibrary.org/documentation/junit/intermittent/))
 - [Hierarchical Context Runner](https://github.com/bechte/junit-hierarchicalcontextrunner/wiki) – A runner implementation that supports context hierarchies in JUnit.
 - [junit-dataprovider](https://github.com/TNG/junit-dataprovider/wiki) – A [TestNG](http://testng.org/doc/index.html) like dataprovider (see [here](http://testng.org/doc/documentation-main.html#parameters-dataproviders)) runner for [JUnit](https://github.com/junit-team/junit).
+- [HookInstallingRunner](https://github.com/Nordstrom/JUnit-Foundation/blob/master/src/main/java/com/nordstrom/automation/junit/HookInstallingRunner.java) - This test runner uses bytecode enhancement to install hooks on test and configuration methods to enable method pre-processing and post-processing. This closely resembles the `IInvokedMethodListener` feature of **TestNG**.
 - BDD testing - these integrate popular BDD/ATDD methodologies
   - [Cucumber Runner](https://github.com/cucumber/cucumber-jvm/blob/master/junit/src/main/java/cucumber/api/junit/Cucumber.java) - Cucumber JVM integration for JUnit, based on Gherkin specifications written in feature files
   - JBehave - [JBehave JUnit runner](https://github.com/codecentric/jbehave-junit-runner) - a Gherkin-based specification framework
