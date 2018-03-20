@@ -169,7 +169,7 @@ public class Fibonacci {
 }
 ```
 
-In the example given above, the Parameterized runner creates names like [1: fib(3)=2]. If you don't specify a name, the current parameter index will be used by default.
+In the example given above, the Parameterized runner creates names like [3: fib(3)=2]. If you don't specify a name, the current parameter index will be used by default.
 
 ## IDE Bug (Eclipse)
 If using the `name` annotation param and one of the inputs has a rounded bracket, e.g. `@Parameters(name = "test({index})")`, then the name gets truncated in Eclipse versions prior to 4.4 (Luna). See https://bugs.eclipse.org/bugs/show_bug.cgi?id=102512.
