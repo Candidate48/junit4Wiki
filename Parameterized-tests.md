@@ -27,8 +27,8 @@ public class FibonacciTest {
     private int fExpected;
 
     public FibonacciTest(int input, int expected) {
-        fInput= input;
-        fExpected= expected;
+        this.fInput = input;
+        this.fExpected = expected;
     }
 
     @Test
