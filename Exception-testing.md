@@ -49,7 +49,7 @@ public void shouldTestExceptionMessage() throws IndexOutOfBoundsException {
 The expectMessage also lets you use Matchers, which gives you a bit more flexibility in your tests. An example:
 
 ```java
-thrown.expectMessage(Matchers.containsString("Size: 0"));
+thrown.expectMessage(CoreMatchers.containsString("Size: 0"));
 ```
 
 Moreover, you can use Matchers to inspect the Exception, useful if it has embedded state you wish to verify.  For example
