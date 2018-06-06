@@ -128,9 +128,11 @@ public static class UsesErrorCollectorTwice {
   check is failed.
 
 ```java
-private static String sequence;
 
 public static class UsesVerifier {
+  
+  private static String sequence;
+  
   @Rule
   public final Verifier collector = new Verifier() {
     @Override
