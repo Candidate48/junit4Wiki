@@ -42,3 +42,21 @@ public class HasGlobalTimeout {
 ```
 
 The timeout specified in the `Timeout` rule applies to the entire test fixture, including any `@Before` or `@After` methods. If the test method is in an infinite loop (or is otherwise not responsive to interrupts) then `@After` methods will not be called.
+
+### Global Timeout Management with JUnit Foundation
+
+[JUnit Foundation](https://github.com/Nordstrom/JUnit-Foundation) provides a timeout management feature that enables you you specify a configurable global timeout interval. The timeout behavior is provided by the code **JUnit** framework via the `timeout` parameter of the **`@Test`** annotation. If no `timeout` parameter has been specified, or if the configured global timeout specifies a longer interval, **JUnit Foundation** overrides the **`@Test`** annotation with a mutable replacement that specifies the configured `timeout` parameter.
+
+Timeout management is applied by **HookInstallingRunner**, activated by setting the `TEST_TIMEOUT` configuration option to the desired default test timeout interval in milliseconds. This timeout specification is applied to every test method that doesn't explicitly specify a longer interval.
+
+```java
+import org.junit.runner.RunWith;
+import com.nordstrom.automation.junit.HookInstallingRunner;
+
+@RunWith(HookInstallingRunner.class)
+public class ExampleTest {
+    
+    ...
+    
+}
+```
