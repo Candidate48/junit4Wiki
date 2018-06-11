@@ -53,8 +53,7 @@ You may filter tests according to any instance of `FilterFactory`. The `--filter
 ## Experimental Runners ##
 ### Enclosed ###
 - `Enclosed` - If you put tests in inner classes, Ant, for example, won't find them. By running the outer class with Enclosed, the tests in the inner classes will be run. You might put tests in inner classes to group them for convenience or to share constants.
-- Javadoc: 
- - http://junit.org/javadoc/latest/org/junit/experimental/runners/Enclosed.html
+- JavaDoc for `Enclosed` can be found [here](http://junit.org/javadoc/latest/org/junit/experimental/runners/Enclosed.html)
 - Working Example of use on the [['Enclosed'-test-runner-example]] page
 
 ## Third Party Runners ##
