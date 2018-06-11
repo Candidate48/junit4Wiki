@@ -20,7 +20,7 @@ Some popular third party implementations of runners for use with `@RunWith` incl
   - Invocation hooks for test and configuration methods
   - Test method timeout management
   - Automatic retry of failed tests
-  - Dynamic run listener attachment
+  - Shutdown hook installation
 - BDD testing - these integrate popular BDD/ATDD methodologies
   - [Cucumber Runner](https://github.com/cucumber/cucumber-jvm/blob/master/junit/src/main/java/cucumber/api/junit/Cucumber.java) - Cucumber JVM integration for JUnit, based on Gherkin specifications written in feature files
   - JBehave - [JBehave JUnit runner](https://github.com/codecentric/jbehave-junit-runner) - a Gherkin-based specification framework
