@@ -6,7 +6,7 @@ Some popular third party implementations of runners for use with `@RunWith` incl
   - [Spring TestContext Framework](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/testing.html#testcontext-framework) reference manual
   - [SpringJUnit4ClassRunner](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.html) Javadoc API
 - Mockito
-  - [MockitoJUnitRunner](http://docs.mockito.googlecode.com/hg/latest/org/mockito/runners/MockitoJUnitRunner.html)
+  - [MockitoJUnitRunner](http://javadoc.io/page/org.mockito/mockito-core/latest/org/mockito/junit/MockitoJUnitRunner.html)
 - JMockit  
   - http://jmockit.org/api1x/mockit/integration/junit4/JMockit.html
 - Concurrency / Test Helpers
