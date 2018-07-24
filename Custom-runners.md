@@ -15,7 +15,10 @@ Some popular third party implementations of runners for use with `@RunWith` incl
   - [JUnit Toolbox](https://code.google.com/p/junit-toolbox/) (Run tests in parallel; also Suite and Categories with Patterns, async)
   - [IntermittentTestRunner](http://tempusfugitlibrary.org/apidocs/com/google/code/tempusfugit/concurrency/IntermittentTestRunner.html) ([run repeatedly to expose intermittent failures](http://tempusfugitlibrary.org/documentation/junit/intermittent/))
 - [Hierarchical Context Runner](https://github.com/bechte/junit-hierarchicalcontextrunner/wiki) – A runner implementation that supports context hierarchies in JUnit.
-- [junit-dataprovider](https://github.com/TNG/junit-dataprovider/wiki) – A [TestNG](http://testng.org/doc/index.html) like dataprovider (see [here](http://testng.org/doc/documentation-main.html#parameters-dataproviders)) runner for [JUnit](https://github.com/junit-team/junit).
+- Parameterised and data-driven testing
+  - [junit-dataprovider](https://github.com/TNG/junit-dataprovider/wiki) – A [TestNG](http://testng.org/doc/index.html) like dataprovider (see [here](http://testng.org/doc/documentation-main.html#parameters-dataproviders)) runner for [JUnit](https://github.com/junit-team/junit).
+  - [JUnitParams](https://github.com/Pragmatists/JUnitParams) - an alternative to JUnit's `Parameterized` runner, which support test data on a per method basis
+  - [ParameterizedSuite](https://github.com/PeterWippermann/parameterized-suite) - Allows to define parameters for test suites.
 - [HookInstallingRunner](https://github.com/Nordstrom/JUnit-Foundation/blob/master/src/main/java/com/nordstrom/automation/junit/HookInstallingRunner.java) - This JUnit test runner implements four significant features:
   - Invocation hooks for test and configuration methods
   - Test method timeout management
@@ -32,4 +35,3 @@ Some popular third party implementations of runners for use with `@RunWith` incl
   - Cola tests - technically a precompiler for tests - [Cola Documentation](http://bmsantos.github.io/cola-maven-plugin/)
 - [JICUnit](https://github.com/Lucas3oo/jicunit) - A JUnit runner in the JEE container for in-container testing similar to JUnitEE and Jakarta Cactus, both which are not developed any more.
 - [JUnit Browser Runner](https://github.com/dukescript/junit-browser-runner) - A JUnit runner that executes your tests in a Browser using [bck2brwsr](http://wiki.apidesign.org/wiki/Bck2Brwsr).
-- [ParameterizedSuite](https://github.com/PeterWippermann/parameterized-suite) - Allows to define parameters for test suites.
