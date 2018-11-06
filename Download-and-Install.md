@@ -4,8 +4,8 @@ To download and install JUnit you currently have the following options.
 
 Download the following JARs and add them to your test classpath:
 
-* [`junit.jar`]http://www.java2s.com/Code/Jar/j/Downloadjunit410jar.htm
-* [`hamcrest-core.jar`]
+* [`junit.jar`](https://search.maven.org/search?q=g:junit%20AND%20a:junit)
+* [`hamcrest-core.jar`](https://search.maven.org/search?q=g:org.hamcrest%20AND%20a:hamcrest-core)
 
 # Maven
 
